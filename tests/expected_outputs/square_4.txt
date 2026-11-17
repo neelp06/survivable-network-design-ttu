@@ -1,0 +1,6 @@
+# Cheapest survivable network for square_4.txt: all four sides (no bridges).
+cost 4
+0 1
+1 2
+2 3
+3 0

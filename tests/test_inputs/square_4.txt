@@ -1,0 +1,8 @@
+# Proposal example: four offices at the corners of a square, each side costs 1.
+# Format: first line n m, then m lines "u v cost" (nodes numbered 0..n-1)
+# A=0, B=1, C=2, D=3
+4 4
+0 1 1
+1 2 1
+2 3 1
+3 0 1

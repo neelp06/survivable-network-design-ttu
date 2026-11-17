@@ -1,0 +1,3 @@
+# Python tooling only (scripts/): generator, benchmark runner, graphs.
+# The algorithms in src/ are C++17 with no external dependencies.
+matplotlib>=3.8
