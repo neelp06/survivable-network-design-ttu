@@ -42,9 +42,17 @@ Try every combination of links, check each for connectivity and bridges, keep th
 
 Running time is roughly O(2^m × (n + m)). The problem is NP-complete (Eswaran & Tarjan).
 
-## 4. Genetic Algorithm (Skipped)
+## 4. Genetic Algorithm
 
-Not included. The assignment allows this section to be skipped; the project compares brute force with the greedy method in Section 5.
+_Updated after the original proposal, which skipped this section._
+
+- **Chromosome:** a bit string with one bit per possible link (1 = built), the same search space brute force enumerates.
+- **Initial population:** random bit strings plus MST-seeded individuals.
+- **Fitness:** total cost plus a large penalty per bridge or extra disconnected component, so valid networks always beat invalid ones.
+- **Evolution:** tournament selection, uniform crossover, bit-flip mutation, and elitism. Invalid children may optionally be repaired by adding the cheapest bridge-covering links.
+- **Output:** the cheapest valid network found. Because the GA is randomized, each network is run with at least 30 seeds.
+
+**How it differs from brute force and greedy.** It samples the search space instead of checking all of it, and unlike greedy it can undo bad choices through crossover and mutation. It is slower than greedy and gives no guarantee of the optimum.
 
 ## 5. Proposed Third Algorithm: Greedy Build-and-Repair
 
@@ -58,13 +66,13 @@ Not included. The assignment allows this section to be skipped; the project comp
 
 ## 6. Research Question
 
-As the number of nodes grows, how do the solution cost and running time of brute force and a greedy method compare when designing the cheapest survivable network, and at what size does brute force stop being practical?
+As the number of nodes grows, how do the solution cost and running time of brute force, a genetic algorithm and a greedy method compare when designing the cheapest survivable network, and at what size does brute force stop being practical?
 
-Secondary: how far above the true best cost (found by brute force) does the greedy method land as the network grows?
+Secondary: how far above the true best cost (found by brute force) do the genetic and greedy methods land as the network grows?
 
 ## 7. Experimental Plan
 
-- **Test data:** Random nodes, distance-based link cost. Sizes 5–9 for both algorithms; up to ~50 for greedy only. Case study: TTU campus (~47 buildings, OpenStreetMap coordinates, straight-line distances). Brute force on a cluster of 8–9 neighboring buildings; greedy on the full campus.
+- **Test data:** Random nodes, distance-based link cost. Sizes 5–9 for all three algorithms; up to ~50 for genetic and greedy only. Case study: TTU campus (~47 buildings, OpenStreetMap coordinates, straight-line distances). Brute force on a cluster of 8–9 neighboring buildings; genetic and greedy on the full campus.
 - **Measurements:** Running time, total cost, memory use, and gap from best known answer (brute force for small cases; MST cost floor for larger).
 - **Repeated trials:** At least 30 random networks per size; report average, spread, best, worst.
 - **Fairness:** Both algorithms receive identical test networks.

@@ -1,6 +1,6 @@
 # Tests
 
-- `test_inputs/` (generate more with `py scripts/generator.py`) — networks fed to **both** algorithms (identical inputs for fairness).
+- `test_inputs/` (generate more with `py scripts/generator.py`) — networks fed to **all three** algorithms (identical inputs for fairness).
 - `expected_outputs/` — hand-solved answers for small networks, used to check the brute-force reference.
 
 ## Input format
