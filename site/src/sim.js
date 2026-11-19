@@ -8,6 +8,9 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
+import { LineSegments2 } from 'three/examples/jsm/lines/LineSegments2.js';
+import { LineSegmentsGeometry } from 'three/examples/jsm/lines/LineSegmentsGeometry.js';
+import { LineMaterial } from 'three/examples/jsm/lines/LineMaterial.js';
 
 const BASE = import.meta.env.BASE_URL + 'data/';
 const ALGOS = [
@@ -54,11 +57,15 @@ export async function initSim(root) {
       <label class="sim-select"><span>Network</span><select data-net></select></label>
       <div class="sim-tabs" data-tabs></div>
     </div>
-    <div class="sim-ui panel" data-panel></div>
+    <div class="sim-ui panel" data-panelwrap>
+      <button class="sim-min" data-min title="Minimize panel" aria-label="Minimize panel">–</button>
+      <div data-panel></div>
+    </div>
     <div class="sim-ui bottom">
       <span class="sim-hint" data-hint>Click a cable to cut it · drag to orbit · scroll to zoom</span>
       <button class="sim-btn" data-reset>Restore cables</button>
       <button class="sim-btn" data-cands>Show all candidate links</button>
+      <button class="sim-btn" data-hideui title="Hide overlays (H)">Hide overlays</button>
     </div>
     <div class="sim-note" data-note></div>`;
   const $ = (s) => root.querySelector(s);
@@ -72,20 +79,22 @@ export async function initSim(root) {
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true; controls.maxPolarAngle = Math.PI * 0.47; controls.autoRotate = true; controls.autoRotateSpeed = 0.4;
   controls.addEventListener('start', () => (controls.autoRotate = false));
-  scene.add(new THREE.HemisphereLight(0x9d7bff, 0x0a0814, 0.9));
-  const sun = new THREE.DirectionalLight(0xffffff, 1.4); sun.position.set(200, 400, 150); scene.add(sun);
+  renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+  scene.add(new THREE.HemisphereLight(0xcfc4ff, 0x1a1430, 1.1));
+  const sun = new THREE.DirectionalLight(0xfff1d6, 2.2); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); scene.add(sun); scene.add(sun.target);
   const composer = new EffectComposer(renderer);
   composer.addPass(new RenderPass(scene, camera));
-  const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.9, 0.5, 0.15);
+  const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.55, 0.4, 0.35);
   composer.addPass(bloom);
   composer.addPass(new OutputPass());
 
   const world = new THREE.Group(); scene.add(world);
-  let state = null;
+  let state = null, candMat = null;
 
   const resize = () => {
     const w = root.clientWidth, h = root.clientHeight;
-    renderer.setSize(w, h, false); composer.setSize(w, h); bloom.setSize(w, h);
+    renderer.setSize(w, h, false); composer.setSize(w, h); bloom.setSize(w, h); candMat?.resolution.set(w, h);
     camera.aspect = w / h; camera.updateProjectionMatrix();
   };
   new ResizeObserver(resize).observe(root);
@@ -98,6 +107,11 @@ export async function initSim(root) {
   const tabs = $('[data-tabs]');
   tabs.innerHTML = ALGOS.map((a) => `<button class="sim-tab" data-algo="${a.key}" style="--c:#${a.color.toString(16).padStart(6, '0')}">${a.label}</button>`).join('');
   tabs.addEventListener('click', (e) => { const b = e.target.closest('[data-algo]'); if (b && !b.disabled) showAlgo(b.dataset.algo); });
+  const wrap = $('[data-panelwrap]');
+  $('[data-min]').addEventListener('click', () => { const m = wrap.classList.toggle('min'); $('[data-min]').textContent = m ? '+' : '–'; $('[data-min]').title = m ? 'Expand panel' : 'Minimize panel'; });
+  const toggleUI = () => { const h = root.classList.toggle('ui-hidden'); $('[data-hideui]').textContent = h ? 'Show overlays' : 'Hide overlays'; };
+  $('[data-hideui]').addEventListener('click', toggleUI);
+  addEventListener('keydown', (e) => { if (e.key.toLowerCase() === 'h' && visible) toggleUI(); });
   $('[data-reset]').addEventListener('click', () => { if (state) { state.cut.clear(); refresh(); } });
   $('[data-cands]').addEventListener('click', (e) => { if (!state) return; state.showCands = !state.showCands; e.target.classList.toggle('on', state.showCands); state.candGroup.visible = state.showCands; });
 
@@ -117,7 +131,11 @@ export async function initSim(root) {
     world.position.set(-center.x, 0, -center.z);
 
     // ground
-    const grid = new THREE.GridHelper(span * 2.4, 40, 0x3b2a6e, 0x1d1538); grid.position.copy(center); world.add(grid);
+    const ground = new THREE.Mesh(new THREE.CircleGeometry(span * 1.6, 64).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: 0x1f2a22, roughness: 1 }));
+    ground.position.set(center.x, -0.05, center.z); ground.receiveShadow = true; world.add(ground);
+    const grid = new THREE.GridHelper(span * 3.2, 48, 0x3b4a3e, 0x2a3530); grid.position.copy(center); grid.material.transparent = true; grid.material.opacity = 0.35; world.add(grid);
+    const sh = sun.shadow.camera, ext = span * 1.2; sh.left = -ext; sh.right = ext; sh.top = ext; sh.bottom = -ext; sh.far = span * 6; sh.updateProjectionMatrix();
+    sun.position.set(span * 0.8, span * 1.6, span * 0.5); sun.target.position.set(0, 0, 0);
 
     // buildings / nodes
     const nodeMats = [], nodeMeshes = [];
@@ -129,16 +147,24 @@ export async function initSim(root) {
         const shape = new THREE.Shape(meta.footprint.map(([x, y]) => new THREE.Vector2(x - meta.x, y - meta.y)));
         geo = new THREE.ExtrudeGeometry(shape, { depth: h, bevelEnabled: false }); geo.rotateX(-Math.PI / 2);
       } else { const w = span * 0.035 + 4; geo = new THREE.BoxGeometry(w, h, w); geo.translate(0, h / 2, 0); }
-      const mat = new THREE.MeshStandardMaterial({ color: 0x2a2148, emissive: 0x6b3fd4, emissiveIntensity: 0.35, roughness: 0.6 });
-      const m = new THREE.Mesh(geo, mat); m.position.copy(p); world.add(m);
+      const mat = new THREE.MeshStandardMaterial({ color: 0xd8cfc2, map: facadeTexture(), roughness: 0.85, emissive: 0x6b3fd4, emissiveIntensity: 0.0 });
+      geo.computeBoundingBox(); const bb = geo.boundingBox;
+      mat.map = mat.map.clone(); mat.map.needsUpdate = true;
+      mat.map.repeat.set(Math.max(1, Math.round((bb.max.x - bb.min.x) / 6)), Math.max(1, Math.round(h / 4)));
+      const m = new THREE.Mesh(geo, [mat, new THREE.MeshStandardMaterial({ color: 0x8f8a83, roughness: 0.9 })]);
+      if (geo.groups.length === 0) m.material = mat;
+      else if (geo.type === 'BoxGeometry') m.material = [mat, mat, new THREE.MeshStandardMaterial({ color: 0x6f6a66, roughness: 0.9 }), mat, mat, mat];
+      m.castShadow = true; m.receiveShadow = true; m.position.copy(p); world.add(m);
       nodeMats.push(mat); nodeMeshes.push(m);
       const label = makeLabel(meta?.name ?? String(i), span); label.position.set(p.x, h + span * 0.03 + 4, p.z); world.add(label);
     });
 
     // candidate links (faint)
     const candGroup = new THREE.Group(); candGroup.visible = false;
-    const cg = new THREE.BufferGeometry().setFromPoints(doc.links.flatMap(([u, v]) => [pos[u], pos[v]]).map((p) => p.clone().setY(2)));
-    candGroup.add(new THREE.LineSegments(cg, new THREE.LineBasicMaterial({ color: 0x9d7bff, transparent: true, opacity: 0.18 })));
+    const cg = new LineSegmentsGeometry().setPositions(doc.links.flatMap(([u, v]) => [pos[u].x, 1.5, pos[u].z, pos[v].x, 1.5, pos[v].z]));
+    const lm = new LineMaterial({ color: 0xc9b8ff, linewidth: 3, transparent: true, opacity: 0.75, dashed: true, dashSize: span * 0.02, gapSize: span * 0.012, worldUnits: false });
+    lm.resolution.set(root.clientWidth, root.clientHeight);
+    const cl = new LineSegments2(cg, lm); cl.computeLineDistances(); candGroup.add(cl); candMat = lm;
     world.add(candGroup);
 
     const cableGroup = new THREE.Group(); world.add(cableGroup);
@@ -168,7 +194,7 @@ export async function initSim(root) {
         const a = s.pos[u].clone().setY(3), b = s.pos[v].clone().setY(3);
         const len = a.distanceTo(b), rad = s.span * 0.006 + 0.6;
         const geo = new THREE.CylinderGeometry(rad, rad, len, 10, 1); geo.rotateX(Math.PI / 2);
-        const mat = new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 1.2 });
+        const mat = new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.9 });
         const mesh = new THREE.Mesh(geo, mat); mesh.position.copy(a).lerp(b, 0.5); mesh.lookAt(b);
         mesh.userData = { i, u, v, baseColor: color };
         // fat invisible hit target for easy clicking
@@ -189,12 +215,12 @@ export async function initSim(root) {
     // main component = the one containing the most nodes
     const counts = {}; an.comp.forEach((c) => (counts[c] = (counts[c] || 0) + 1));
     const main = +Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
-    s.nodeMats.forEach((m, i) => { const lost = an.comps > 1 && an.comp[i] !== main; m.emissive.setHex(lost ? CUT : 0x6b3fd4); m.emissiveIntensity = lost ? 0.9 : 0.35; });
+    s.nodeMats.forEach((m, i) => { const lost = an.comps > 1 && an.comp[i] !== main; m.emissive.setHex(lost ? CUT : 0x000000); m.emissiveIntensity = lost ? 0.8 : 0; });
     s.cables.forEach(({ mesh, mat }, i) => {
       const isCut = s.cut.has(i), isBridge = !isCut && bridgeSet.has(edges[i].join('-'));
       mat.color.setHex(isCut ? 0x331018 : mesh.userData.baseColor);
       mat.emissive.setHex(isCut ? 0x220008 : isBridge ? CUT : mesh.userData.baseColor);
-      mat.emissiveIntensity = isCut ? 0.2 : isBridge ? 1.6 : 1.1;
+      mat.emissiveIntensity = isCut ? 0.2 : isBridge ? 1.4 : 0.9;
       mat.transparent = isCut; mat.opacity = isCut ? 0.35 : 1;
     });
     renderPanel(r, an, live);
@@ -210,7 +236,7 @@ export async function initSim(root) {
     panel.innerHTML = `
       <div class="sim-algo">${ALGOS.find((a) => a.key === s.algo).label}</div>
       <dl>
-        <dt>Total cost</dt><dd>${fmt(r.total_cost)}</dd>
+        <dt>Total cost</dt><dd>${s.doc.cost_unit === 'USD' ? '$' + fmt(r.total_cost, 0) : fmt(r.total_cost)}</dd>
         <dt>Cables used</dt><dd>${r.chosen.length}</dd>
         <dt>Solver time</dt><dd>${fmt(r.time_us, 1)} µs</dd>
         <dt>Survives any 1 cut?</dt><dd class="${r.survivable ? 'good' : 'bad'}">${r.survivable ? 'Yes' : `No · ${r.bridges.length} bridge${r.bridges.length === 1 ? '' : 's'}`}</dd>
@@ -262,4 +288,17 @@ function makeLabel(text, span) {
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthWrite: false, transparent: true }));
   const k = (span * 0.035 + 3) / c.height; sp.scale.set(c.width * k, c.height * k, 1);
   return sp;
+}
+
+let _facade;
+function facadeTexture() {
+  if (_facade) return _facade;
+  const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d');
+  g.fillStyle = '#c9b9a4'; g.fillRect(0, 0, 64, 64);            // brick/stone tone
+  g.fillStyle = 'rgba(120,80,60,.25)'; for (let y = 0; y < 64; y += 8) g.fillRect(0, y, 64, 1);
+  g.fillStyle = '#2b3442'; g.fillRect(14, 16, 36, 30);            // window
+  g.fillStyle = 'rgba(255,220,150,.55)'; g.fillRect(16, 18, 15, 26); // lit pane
+  g.fillStyle = '#9aa6b5'; g.fillRect(31, 16, 2, 30);
+  _facade = new THREE.CanvasTexture(c); _facade.wrapS = _facade.wrapT = THREE.RepeatWrapping; _facade.colorSpace = THREE.SRGBColorSpace;
+  return _facade;
 }

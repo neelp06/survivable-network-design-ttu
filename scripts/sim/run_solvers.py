@@ -135,7 +135,11 @@ def main():
     doc = {'name': name, 'source': os.path.relpath(os.path.abspath(a.network), ROOT), 'n': n,
            'links': [[u, v, c] for u, v, c in links], 'results': {}}
     if a.positions:
-        doc['nodes'] = load_json(a.positions)['nodes']
+        meta = load_json(a.positions)
+        doc['nodes'] = meta['nodes']
+        for k in ('cost_unit', 'scenario', 'route_factor'):
+            if k in meta:
+                doc[k] = meta[k]
 
     with tempfile.TemporaryDirectory() as tmp:
         for key in SOLVERS:

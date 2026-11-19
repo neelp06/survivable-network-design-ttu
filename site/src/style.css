@@ -236,3 +236,9 @@ cite { display: block; margin-top: 12px; font: .8em var(--font-m); color: var(--
 .sim-slot .sim-placeholder { position: absolute; inset: 0; margin: auto; height: max-content; }
 .sim-slot:has(canvas) .sim-placeholder { display: none; }
 @media (max-width: 900px) { .sim-ui.panel { position: absolute; top: auto; bottom: 56px; right: 10px; width: 60%; } .sim-slot { min-height: 70vh; } }
+.sim-min { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; border-radius: 6px; border: 1px solid var(--card-b); background: transparent; color: var(--text); cursor: pointer; font: 600 14px var(--font-m); line-height: 1; }
+.sim-min:hover { border-color: var(--gold); color: var(--gold); }
+.sim-ui.panel.min { width: auto; padding: 8px 40px 8px 12px; }
+.sim-ui.panel.min [data-panel] > :not(.sim-algo) { display: none; }
+.sim-ui.panel.min .sim-algo { margin: 0; font-size: 13px; }
+.sim-slot.ui-hidden .sim-ui:not(.bottom), .sim-slot.ui-hidden .sim-note, .sim-slot.ui-hidden .sim-ui.bottom > :not([data-hideui]) { display: none; }
