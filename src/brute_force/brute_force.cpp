@@ -149,7 +149,7 @@ void bruteForceMST(int V, vector<Edge>& edges)
             }
         }
 
-        // A spanning tree must contain exactly V-1 edges
+        // A spanning tree must contain exactly V edges
         if (count != V - 1)
             continue;
 
