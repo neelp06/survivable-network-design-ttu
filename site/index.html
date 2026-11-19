@@ -131,12 +131,14 @@
             <li class="note"><span class="todo">In progress: the current code keeps subsets of exactly V−1 edges (a spanning tree). The bridge check for survivability is not in yet.</span></li>
           </ul>
         </div>
-        <pre class="code reveal"><span class="c">// src/brute_force/brute_force.cpp (excerpt, unchanged)</span>
+        <pre class="code reveal"><span class="c">// src/brute_force/brute_force.cpp, lines 135–167 (verbatim)</span>
 <b>for</b> (int mask = 0; mask &lt; (1 &lt;&lt; E); mask++)
 {
+
     vector&lt;int&gt; selected;
     count = 0;
     totalWeight = 0;
+
     <b>for</b> (int i = 0; i &lt; E; i++)
     {
         <b>if</b> (mask &amp; (1 &lt;&lt; i))
@@ -146,11 +148,16 @@
             totalWeight += edges[i].weight;
         }
     }
+
     <span class="c">// A spanning tree must contain exactly V-1 edges</span>
     <b>if</b> (count != V - 1)
         <b>continue</b>;
+
+    <span class="c">// Check connectivity (also guarantees no cycles</span>
+    <span class="c">// when exactly V-1 edges are selected)</span>
     <b>if</b> (isConnected(V, edges, selected))
     {
+
         <b>if</b> (totalWeight &lt; minWeight)
         {
             minWeight = totalWeight;
