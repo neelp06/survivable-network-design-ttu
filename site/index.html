@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survivable Network Design at TTU</title>
+  <meta name="description" content="Brute force vs. a genetic algorithm vs. greedy build-and-repair for the cheapest network that survives any single cable cut — with a Tennessee Tech campus case study." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#title" class="brand"><span class="brand-dot"></span>SND · TTU</a>
+    <div class="topbar-right">
+      <span class="slide-counter" id="counter">01 / 12</span>
+      <button class="mode-btn" id="modeBtn" title="Toggle presentation mode (P)">Present</button>
+    </div>
+  </header>
+
+  <nav class="dots" id="dots" aria-label="Sections"></nav>
+  <div class="progress" id="progress"></div>
+
+  <main>
+    <!-- 1. TITLE -->
+    <section class="slide hero" id="title" data-title="Title">
+      <svg class="hero-net" id="heroNet" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+      <div class="slide-inner">
+        <p class="eyebrow reveal">CSC 2400 · Design of Algorithms · Undergraduate Research</p>
+        <h1 class="reveal">Survivable Network Design<br /><span class="grad">at Tennessee Tech</span></h1>
+        <p class="lede reveal">Brute force, a genetic algorithm, and greedy build-and-repair compete to find the cheapest cable layout that survives <em>any</em> single cut.</p>
+        <ul class="team reveal">
+          <li><b>Nick</b><span>Brute force</span></li>
+          <li><b>Neel</b><span>Genetic algorithm</span></li>
+          <li><b>Cristin</b><span>Greedy</span></li>
+          <li><b>Brady</b><span>Simulation &amp; case study</span></li>
+        </ul>
+        <div class="hero-foot reveal">
+          <canvas class="qr" data-qr></canvas>
+          <a class="repo-link" href="https://github.com/neelp06/survivable-network-design-ttu">github.com/neelp06/survivable-network-design-ttu</a>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll or press →</div>
+    </section>
+
+    <!-- 2. QUESTION -->
+    <section class="slide" id="question" data-title="The Question">
+      <div class="slide-inner split">
+        <div>
+          <p class="kicker reveal">01 — The Question</p>
+          <h2 class="reveal">What is the cheapest network that <span class="hl">still works after any one cable fails?</span></h2>
+          <dl class="spec reveal">
+            <div><dt>Input</dt><dd><i>n</i> sites and a cost for every possible cable between them.</dd></div>
+            <div><dt>Valid</dt><dd>Every site connected, and <b>no bridge</b>: no single cable whose loss splits the network (2-edge-connected).</dd></div>
+            <div><dt>Goal</dt><dd><b>Minimize</b> total cable cost.</dd></div>
+            <div><dt>Why</dt><dd>Campus &amp; ISP backbones, data centers, power grids. Availability is a security goal.</dd></div>
+          </dl>
+        </div>
+        <figure class="card demo reveal">
+          <figcaption>Try it: click a cable to cut it.</figcaption>
+          <div class="demo-tabs" role="tablist">
+            <button class="tab active" data-variant="tree">Tree · cost 3</button>
+            <button class="tab" data-variant="ring">Ring · cost 4</button>
+          </div>
+          <svg id="squareDemo" viewBox="0 0 320 260"></svg>
+          <p class="demo-status" id="demoStatus">Cut any cable to test survivability.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3. BACKGROUND -->
+    <section class="slide" id="background" data-title="Background">
+      <div class="slide-inner">
+        <p class="kicker reveal">02 — Background Research</p>
+        <h2 class="reveal">Easy to state. <span class="hl">Provably hard</span> to solve.</h2>
+        <div class="grid3">
+          <article class="card reveal">
+            <span class="tag">NP-complete</span>
+            <h3>No known fast exact method</h3>
+            <p>Eswaran &amp; Tarjan (1976) showed the weighted version is NP-complete. Any exact search can blow up exponentially.</p>
+            <cite>[1]</cite>
+          </article>
+          <article class="card reveal">
+            <span class="tag">Explosion</span>
+            <h3>2<sup>n(n−1)/2</sup> candidate designs</h3>
+            <table class="mini">
+              <tr><th>Sites</th><th>Links</th><th>Designs</th></tr>
+              <tr><td>7</td><td>21</td><td>~2 M</td></tr>
+              <tr><td>8</td><td>28</td><td>~268 M</td></tr>
+              <tr><td>9</td><td>36</td><td>~69 B</td></tr>
+            </table>
+          </article>
+          <article class="card reveal">
+            <span class="tag">Approximation</span>
+            <h3>A close relative is within 3×</h3>
+            <p>A spanning tree plus 2-approximate augmentation costs at most 3× the optimum. Our greedy rule is similar, but we found no such proof for our exact rule.</p>
+            <cite>[2] [4] [6]</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HYPOTHESIS -->
+    <section class="slide" id="hypothesis" data-title="Hypothesis">
+      <div class="slide-inner">
+        <p class="kicker reveal">03 — Hypothesis</p>
+        <h2 class="reveal">Our prediction, <span class="hl">before</span> any results.</h2>
+        <p class="reveal"><span class="todo">Draft: the team needs to confirm these predictions</span></p>
+        <div class="grid3 predictions">
+          <article class="card pred bf reveal"><span class="algo-badge">Brute Force</span><p>Optimal every time, but impractical beyond <b>~8–9 sites</b>.</p></article>
+          <article class="card pred ga reveal"><span class="algo-badge">Genetic</span><p>Near-optimal on larger networks, <b>slower than greedy</b>, and its cost varies from seed to seed.</p></article>
+          <article class="card pred gr reveal"><span class="algo-badge">Greedy</span><p>Fastest at every size, with cost above optimal but <b>close to it</b>.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. BRUTE FORCE -->
+    <section class="slide algo" id="brute" data-title="Brute Force" data-accent="bf">
+      <div class="slide-inner split">
+        <div>
+          <p class="kicker reveal">04 — Method · Brute Force <span class="owner">Nick</span></p>
+          <h2 class="reveal">Check <span class="hl">every</span> subset of links.</h2>
+          <ul class="facts reveal">
+            <li><b>Examines</b> every subset of the possible links (a bitmask over all <i>E</i> links).</li>
+            <li><b>Evaluates</b> each subset with <code>isConnected</code> and keeps the cheapest valid one.</li>
+            <li><b>Optimal?</b> Yes, within what it checks: nothing is skipped.</li>
+            <li><b>Time</b> <span class="todo">TBD: confirm with Nick</span></li>
+            <li class="note"><span class="todo">In progress: the current code keeps subsets of exactly V−1 edges (a spanning tree). The bridge check for survivability is not in yet.</span></li>
+          </ul>
+        </div>
+        <pre class="code reveal"><span class="c">// src/brute_force/brute_force.cpp, lines 135–167 (verbatim)</span>
+<b>for</b> (int mask = 0; mask &lt; (1 &lt;&lt; E); mask++)
+{
+
+    vector&lt;int&gt; selected;
+    count = 0;
+    totalWeight = 0;
+
+    <b>for</b> (int i = 0; i &lt; E; i++)
+    {
+        <b>if</b> (mask &amp; (1 &lt;&lt; i))
+        {
+            selected.push_back(i);
+            count++;
+            totalWeight += edges[i].weight;
+        }
+    }
+
+    <span class="c">// A spanning tree must contain exactly V-1 edges</span>
+    <b>if</b> (count != V - 1)
+        <b>continue</b>;
+
+    <span class="c">// Check connectivity (also guarantees no cycles</span>
+    <span class="c">// when exactly V-1 edges are selected)</span>
+    <b>if</b> (isConnected(V, edges, selected))
+    {
+
+        <b>if</b> (totalWeight &lt; minWeight)
+        {
+            minWeight = totalWeight;
+            bestMST = selected;
+        }
+    }
+}</pre>
+      </div>
+    </section>
+
+    <!-- 6. GENETIC -->
+    <section class="slide algo" id="genetic" data-title="Genetic" data-accent="ga">
+      <div class="slide-inner split">
+        <div>
+          <p class="kicker reveal">05 — Method · Genetic Algorithm <span class="owner">Neel</span> <span class="todo">Planned design from README; code not written yet</span></p>
+          <h2 class="reveal">Evolve networks toward <span class="hl">cheap and survivable</span>.</h2>
+          <ul class="facts reveal">
+            <li><b>Chromosome</b> One bit per possible link (1 = built).</li>
+            <li><b>Fitness</b> cost + penalty × (bridges + extra components). Lower is better.</li>
+            <li><b>Evolution</b> Tournament selection → uniform crossover → bit-flip mutation (≈1/m), with elitism.</li>
+            <li><b>Stops</b> after a fixed number of generations, or once the best cost stops improving.</li>
+          </ul>
+          <div class="params reveal">
+            <span>Population <b class="todo">TBD</b></span><span>Generations <b class="todo">TBD</b></span><span>Mutation <b>≈1/m</b></span><span>Seeds <b>≥30</b></span>
+          </div>
+        </div>
+        <div class="chromo reveal" aria-label="Chromosome illustration">
+          <div class="chromo-row" data-label="Parent A"></div>
+          <div class="chromo-row" data-label="Parent B"></div>
+          <div class="chromo-row child" data-label="Child"></div>
+          <p class="chromo-cap">Illustration only, not output from our code. Uniform crossover: each link bit comes from either parent. A gold outline marks a mutated bit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GREEDY -->
+    <section class="slide algo" id="greedy" data-title="Greedy" data-accent="gr">
+      <div class="slide-inner split">
+        <div>
+          <p class="kicker reveal">06 — Method · Greedy Build-and-Repair <span class="owner">Cristin</span></p>
+          <h2 class="reveal">Build the cheapest tree, then <span class="hl">patch its weak spots</span>.</h2>
+          <ol class="steps reveal">
+            <li><b>Build</b> a Minimum Spanning Tree with Kruskal's algorithm [5]. Every tree link is a bridge.</li>
+            <li><b>Repair</b> by adding the link with the lowest <i>cost ÷ bridges newly covered</i>.</li>
+            <li><b>Repeat</b> until no bridge remains.</li>
+          </ol>
+          <ul class="facts reveal">
+            <li><b>Optimal?</b> No. It never reconsiders a choice. Fast and deterministic.</li>
+            <li><b>Time</b> <span class="todo">TBD, confirm with implementation</span></li>
+          </ul>
+        </div>
+        <svg class="card greedy-viz reveal" data-note="illustration" id="greedyViz" viewBox="0 0 320 260" aria-label="Greedy build-and-repair illustration"></svg>
+      </div>
+    </section>
+
+    <!-- 8. SETUP -->
+    <section class="slide" id="setup" data-title="Setup">
+      <div class="slide-inner">
+        <p class="kicker reveal">07 — Experimental Setup</p>
+        <h2 class="reveal">A <span class="hl">fair</span>, reproducible test.</h2>
+        <div class="grid4">
+          <div class="stat reveal"><b>5–9</b><span>sites: all three algorithms</span></div>
+          <div class="stat reveal"><b>≤50</b><span>sites: genetic &amp; greedy only</span></div>
+          <div class="stat reveal"><b>30+</b><span>random networks per size</span></div>
+          <div class="stat reveal"><b>30</b><span>GA seeds per network</span></div>
+        </div>
+        <dl class="spec two reveal">
+          <div><dt>Language</dt><dd>C++17 (-O2, per Makefile). Python for generation and plots (planned).</dd></div>
+          <div><dt>Hardware</dt><dd class="todo">TBD: CPU, RAM, OS</dd></div>
+          <div><dt>Inputs</dt><dd>Random points with straight-line distance as cost. Every algorithm gets the identical networks.</dd></div>
+          <div><dt>Metrics</dt><dd>Runtime and cost gap are reported <b>separately</b>. The gap is measured against brute force for small n and the MST floor for large n.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 9. RESULTS -->
+    <section class="slide" id="results" data-title="Results">
+      <div class="slide-inner">
+        <p class="kicker reveal">08 — Results</p>
+        <h2 class="reveal">What happened.</h2>
+        <div class="grid2">
+          <figure class="card chart-slot reveal">
+            <figcaption><b>Runtime vs. network size</b><span>y: milliseconds (log) · x: sites · mean of 30</span></figcaption>
+            <div class="awaiting">Awaiting benchmark data</div>
+          </figure>
+          <figure class="card chart-slot reveal">
+            <figcaption><b>Cost gap from optimum</b><span>y: % above best known · x: sites · mean ± spread</span></figcaption>
+            <div class="awaiting">Awaiting benchmark data</div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CASE STUDY -->
+    <section class="slide case" id="case" data-title="TTU Case Study">
+      <div class="slide-inner">
+        <p class="kicker reveal">09 — Case Study <span class="owner">Brady</span></p>
+        <h2 class="reveal">Tennessee Tech: <span class="hl">wiring a real campus</span>.</h2>
+        <div class="case-grid">
+          <div class="sim-slot reveal" id="simSlot">
+            <div class="sim-placeholder">
+              <span class="pulse"></span>
+              <b>Loading 3D simulation…</b>
+              <span>Needs WebGL. Results come from the team's solvers via scripts/sim/run_solvers.py.</span>
+            </div>
+          </div>
+          <div class="case-side">
+            <p class="reveal"><span class="todo">TTU building data not added yet: the simulator currently shows the repo's test networks</span></p>
+            <div class="stat reveal"><b>~47</b><span>campus buildings (OpenStreetMap)</span></div>
+            <div class="stat reveal"><b>8–9</b><span>building cluster for brute force</span></div>
+            <div class="stat reveal"><b class="todo">TBD</b><span>GA cost vs. greedy, full campus</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. DISCUSSION + CONCLUSION -->
+    <section class="slide" id="conclusion" data-title="Conclusion">
+      <div class="slide-inner">
+        <p class="kicker reveal">10 — Discussion &amp; Conclusion</p>
+        <h2 class="reveal">When, why, and <span class="hl">under what conditions</span>.</h2>
+        <div class="grid3">
+          <article class="card reveal"><span class="tag">Takeaway 1</span><p class="todo">Fill in from results</p></article>
+          <article class="card reveal"><span class="tag">Takeaway 2</span><p class="todo">Fill in from results</p></article>
+          <article class="card reveal"><span class="tag">Takeaway 3</span><p class="todo">Fill in from results</p></article>
+        </div>
+        <div class="grid2 tight">
+          <div class="card reveal"><span class="tag warn">Limitations</span><p>Beyond ~9 sites we only have the MST lower bound, which may make the heuristics look worse than they are.</p></div>
+          <div class="card reveal"><span class="tag">Next step</span><p class="todo">Fill in</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. REFERENCES -->
+    <section class="slide" id="references" data-title="References">
+      <div class="slide-inner split">
+        <div>
+          <p class="kicker reveal">11 — References</p>
+          <ol class="refs reveal">
+            <li>Eswaran &amp; Tarjan (1976). Augmentation problems. <i>SIAM J. Computing</i> 5(4).</li>
+            <li>Khuller (1995). Approximation algorithms for finding highly connected subgraphs.</li>
+            <li>Borradaile &amp; Klein (2015). 2-edge-connectivity SND in planar graphs. arXiv:1302.2184.</li>
+            <li>Bang-Jensen (2007). DM85 project notes, Univ. of Southern Denmark.</li>
+            <li>Kruskal (1956). Shortest spanning subtree. <i>Proc. AMS</i> 7(1).</li>
+            <li>Bang-Jensen, Chiarandini &amp; Morling (2010). Heuristics for 2-edge-connectivity augmentation. <i>Networks</i> 55(4).</li>
+          </ol>
+        </div>
+        <div class="end-card reveal">
+          <canvas class="qr big" data-qr></canvas>
+          <p>Code, inputs &amp; results</p>
+          <a href="https://github.com/neelp06/survivable-network-design-ttu">neelp06/survivable-network-design-ttu</a>
+          <p class="thanks">Thank you. Questions?</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

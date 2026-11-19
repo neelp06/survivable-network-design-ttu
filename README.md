@@ -145,7 +145,11 @@ _Work in progress._
 
 ## Generative AI Statement
 
-_TBD — fill in before submission._ Example: "Claude (Anthropic) was used to scaffold the repository structure and README template. All algorithm implementations were written by the team members."
+**Presentation website (`site/`, `.github/workflows/pages.yml`).** Brady used Claude (Anthropic) through Claude Code to build the presentation website: the page layout, styling, scroll transitions, presenter controls, the small explanatory animations (square cut example, crossover illustration, greedy illustration), and the GitHub Pages deploy workflow. Section wording was drafted with Claude from the team's README, proposal and references, then checked against the repository. Content not yet confirmed by the team is marked on the site with a dashed "TBD" box. Brady directed the design and reviewed the output. The code excerpt on the brute-force slide is copied verbatim from Nick's `src/brute_force/brute_force.cpp`; Claude did not write or change any algorithm code.
+
+**Simulation tooling (`scripts/sim/`, `site/src/sim.js`).** Brady also used Claude to write the simulation tooling: file-format converters, a runner that executes the team's unchanged solvers and parses their printed output, an independent survivability (bridge) check, the OpenStreetMap import scripts, and the 3D simulator on the website. The simulator only displays saved solver output; it does not re-implement any of the team's algorithms. Claude also searched the web for fiber installation costs and drafted the dollar cost model in `docs/cost_model.md`; its figures still need checking against the cited sources.
+
+_Other members: add any AI use for your own parts before submission._
 
 ## References
 

@@ -1,0 +1,103 @@
+{
+ "name": "test_inputs_square_4",
+ "source": "tests/test_inputs/square_4.txt",
+ "n": 4,
+ "links": [
+  [
+   0,
+   1,
+   1.0
+  ],
+  [
+   1,
+   2,
+   1.0
+  ],
+  [
+   2,
+   3,
+   1.0
+  ],
+  [
+   3,
+   0,
+   1.0
+  ]
+ ],
+ "results": {
+  "brute_force": {
+   "chosen": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "reported_cost": 3.0,
+   "time_us": 13.26,
+   "wall_us": 4544,
+   "total_cost": 3.0,
+   "components": 1,
+   "bridges": [
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "survivable": false,
+   "status": "ok"
+  },
+  "genetic": {
+   "status": "not implemented yet (no main() in src/genetic/genetic.cpp)"
+  },
+  "greedy": {
+   "chosen": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "phase": [
+    "tree",
+    "tree",
+    "tree",
+    "added"
+   ],
+   "reported_cost": 4.0,
+   "time_us": 3.633,
+   "wall_us": 2088,
+   "total_cost": 4.0,
+   "components": 1,
+   "bridges": [],
+   "survivable": true,
+   "status": "ok"
+  }
+ }
+}

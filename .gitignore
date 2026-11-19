@@ -26,3 +26,6 @@ desktop.ini
 
 # Office temp files
 ~$*
+node_modules/
+site/dist/
+build/
