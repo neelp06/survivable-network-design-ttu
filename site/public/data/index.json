@@ -1,6 +1,16 @@
 {
  "runs": [
   {
+   "name": "ttu_full",
+   "n": 54,
+   "geo": true
+  },
+  {
+   "name": "ttu_quad7",
+   "n": 7,
+   "geo": true
+  },
+  {
    "name": "test_inputs_square_4",
    "n": 4,
    "geo": false

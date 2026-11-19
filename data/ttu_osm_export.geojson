@@ -1,0 +1,7397 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-11-19T22:23:21Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "relation/3894692",
+      "properties": {
+        "@id": "relation/3894692",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "710",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "dormitory",
+        "designation": "Residence Hall (Female Only)",
+        "name": "Crawford Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5047606,
+              36.1720047
+            ],
+            [
+              -85.5047488,
+              36.172096
+            ],
+            [
+              -85.5047804,
+              36.1720987
+            ],
+            [
+              -85.5047703,
+              36.1721765
+            ],
+            [
+              -85.5047136,
+              36.1721717
+            ],
+            [
+              -85.5047098,
+              36.1722037
+            ],
+            [
+              -85.5047071,
+              36.1722218
+            ],
+            [
+              -85.5047417,
+              36.1722248
+            ],
+            [
+              -85.5047334,
+              36.1722892
+            ],
+            [
+              -85.5047095,
+              36.1722872
+            ],
+            [
+              -85.5046961,
+              36.1723904
+            ],
+            [
+              -85.5051811,
+              36.1724315
+            ],
+            [
+              -85.5051937,
+              36.1723338
+            ],
+            [
+              -85.5051741,
+              36.1723321
+            ],
+            [
+              -85.5051995,
+              36.1721363
+            ],
+            [
+              -85.50522,
+              36.1721381
+            ],
+            [
+              -85.5052321,
+              36.1720446
+            ],
+            [
+              -85.5047606,
+              36.1720047
+            ]
+          ],
+          [
+            [
+              -85.5050646,
+              36.1723257
+            ],
+            [
+              -85.5048576,
+              36.1723072
+            ],
+            [
+              -85.5048608,
+              36.1722759
+            ],
+            [
+              -85.5048876,
+              36.172278
+            ],
+            [
+              -85.5049053,
+              36.1721421
+            ],
+            [
+              -85.5048822,
+              36.1721395
+            ],
+            [
+              -85.5048865,
+              36.1721096
+            ],
+            [
+              -85.5050883,
+              36.1721285
+            ],
+            [
+              -85.5050646,
+              36.1723257
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/7854585",
+      "properties": {
+        "@id": "relation/7854585",
+        "building": "university",
+        "name": "Bell Hall",
+        "source": "Tennessee Technological University",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5048994,
+              36.1715352
+            ],
+            [
+              -85.5049552,
+              36.1710567
+            ],
+            [
+              -85.5047931,
+              36.1710444
+            ],
+            [
+              -85.5047878,
+              36.1710903
+            ],
+            [
+              -85.5046383,
+              36.1710789
+            ],
+            [
+              -85.5046574,
+              36.1709157
+            ],
+            [
+              -85.5046086,
+              36.170912
+            ],
+            [
+              -85.5046118,
+              36.1708847
+            ],
+            [
+              -85.5043853,
+              36.1708673
+            ],
+            [
+              -85.5043821,
+              36.1708939
+            ],
+            [
+              -85.5043251,
+              36.1708895
+            ],
+            [
+              -85.5043068,
+              36.1710439
+            ],
+            [
+              -85.5041787,
+              36.171034
+            ],
+            [
+              -85.5041852,
+              36.1709798
+            ],
+            [
+              -85.5040078,
+              36.1709661
+            ],
+            [
+              -85.5039499,
+              36.1714551
+            ],
+            [
+              -85.504302,
+              36.1714823
+            ],
+            [
+              -85.5042973,
+              36.1715224
+            ],
+            [
+              -85.5044512,
+              36.1715356
+            ],
+            [
+              -85.5045247,
+              36.1715398
+            ],
+            [
+              -85.5045286,
+              36.171507
+            ],
+            [
+              -85.5048994,
+              36.1715352
+            ]
+          ],
+          [
+            [
+              -85.5047596,
+              36.1713149
+            ],
+            [
+              -85.5045119,
+              36.1712953
+            ],
+            [
+              -85.5045173,
+              36.1712531
+            ],
+            [
+              -85.5043799,
+              36.1712428
+            ],
+            [
+              -85.5043757,
+              36.1712847
+            ],
+            [
+              -85.504147,
+              36.1712665
+            ],
+            [
+              -85.504152,
+              36.1712189
+            ],
+            [
+              -85.5041928,
+              36.171222
+            ],
+            [
+              -85.5041987,
+              36.171171
+            ],
+            [
+              -85.5041789,
+              36.1711695
+            ],
+            [
+              -85.5041887,
+              36.1710841
+            ],
+            [
+              -85.5047687,
+              36.1711276
+            ],
+            [
+              -85.5047579,
+              36.171222
+            ],
+            [
+              -85.5047374,
+              36.1712205
+            ],
+            [
+              -85.5047322,
+              36.1712657
+            ],
+            [
+              -85.5047655,
+              36.1712682
+            ],
+            [
+              -85.5047596,
+              36.1713149
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/15313406",
+      "properties": {
+        "@id": "relation/15313406",
+        "building": "university",
+        "leisure": "fitness_centre",
+        "name": "Marc L. Burnett Student Recreation and Fitness Center",
+        "sport": "basketball;swimming;fitness;climbing;running;volleyball;table_tennis;athletics",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5110267,
+              36.172492
+            ],
+            [
+              -85.5098632,
+              36.1723945
+            ],
+            [
+              -85.5098589,
+              36.172428
+            ],
+            [
+              -85.5097044,
+              36.1724151
+            ],
+            [
+              -85.509664,
+              36.1727307
+            ],
+            [
+              -85.5096224,
+              36.1730552
+            ],
+            [
+              -85.509858,
+              36.1730725
+            ],
+            [
+              -85.5098641,
+              36.1730789
+            ],
+            [
+              -85.5098852,
+              36.17309
+            ],
+            [
+              -85.5099096,
+              36.1730948
+            ],
+            [
+              -85.5099329,
+              36.1730929
+            ],
+            [
+              -85.5099543,
+              36.1730853
+            ],
+            [
+              -85.5099716,
+              36.1730727
+            ],
+            [
+              -85.5099832,
+              36.1730563
+            ],
+            [
+              -85.5099878,
+              36.1730378
+            ],
+            [
+              -85.509985,
+              36.173019
+            ],
+            [
+              -85.5099791,
+              36.1730089
+            ],
+            [
+              -85.5099689,
+              36.1729981
+            ],
+            [
+              -85.5099696,
+              36.1729862
+            ],
+            [
+              -85.5099816,
+              36.1729867
+            ],
+            [
+              -85.5099944,
+              36.172874
+            ],
+            [
+              -85.5105211,
+              36.172918
+            ],
+            [
+              -85.5105329,
+              36.1729634
+            ],
+            [
+              -85.510551,
+              36.1729743
+            ],
+            [
+              -85.5105697,
+              36.1729855
+            ],
+            [
+              -85.5106325,
+              36.1729906
+            ],
+            [
+              -85.510605,
+              36.1732117
+            ],
+            [
+              -85.5109518,
+              36.1732399
+            ],
+            [
+              -85.5111583,
+              36.1732566
+            ],
+            [
+              -85.5112251,
+              36.1727198
+            ],
+            [
+              -85.5111722,
+              36.1725952
+            ],
+            [
+              -85.5110841,
+              36.1725134
+            ],
+            [
+              -85.5110267,
+              36.172492
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188231725",
+      "properties": {
+        "@id": "way/188231725",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "715",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "university",
+        "name": "Oakley Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5036251,
+              36.1727973
+            ],
+            [
+              -85.5038159,
+              36.1728108
+            ],
+            [
+              -85.5038241,
+              36.1727348
+            ],
+            [
+              -85.5038478,
+              36.1727365
+            ],
+            [
+              -85.5038573,
+              36.1726487
+            ],
+            [
+              -85.503907,
+              36.1726522
+            ],
+            [
+              -85.5039106,
+              36.1726183
+            ],
+            [
+              -85.5039456,
+              36.1726208
+            ],
+            [
+              -85.5039667,
+              36.1724255
+            ],
+            [
+              -85.5039268,
+              36.1724226
+            ],
+            [
+              -85.5039298,
+              36.1723946
+            ],
+            [
+              -85.5038996,
+              36.1723925
+            ],
+            [
+              -85.5039105,
+              36.1722919
+            ],
+            [
+              -85.5038732,
+              36.1722893
+            ],
+            [
+              -85.5038801,
+              36.1722249
+            ],
+            [
+              -85.5038436,
+              36.1722223
+            ],
+            [
+              -85.5038489,
+              36.1721732
+            ],
+            [
+              -85.5037416,
+              36.1721657
+            ],
+            [
+              -85.503738,
+              36.1721988
+            ],
+            [
+              -85.5037045,
+              36.1721964
+            ],
+            [
+              -85.5037022,
+              36.1722181
+            ],
+            [
+              -85.5036248,
+              36.1722126
+            ],
+            [
+              -85.5036098,
+              36.1723517
+            ],
+            [
+              -85.5035804,
+              36.1723496
+            ],
+            [
+              -85.5035348,
+              36.1727721
+            ],
+            [
+              -85.5036271,
+              36.1727786
+            ],
+            [
+              -85.5036251,
+              36.1727973
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188231726",
+      "properties": {
+        "@id": "way/188231726",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "815",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "university",
+        "designation": "Dept. of Geosciences",
+        "name": "Kittrell Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5035094,
+              36.1738578
+            ],
+            [
+              -85.5037231,
+              36.173873
+            ],
+            [
+              -85.5037298,
+              36.173811
+            ],
+            [
+              -85.5037183,
+              36.1738102
+            ],
+            [
+              -85.5037233,
+              36.1737644
+            ],
+            [
+              -85.5037291,
+              36.1737098
+            ],
+            [
+              -85.5037478,
+              36.1737111
+            ],
+            [
+              -85.5037574,
+              36.1736212
+            ],
+            [
+              -85.5036983,
+              36.1736171
+            ],
+            [
+              -85.5037013,
+              36.1735889
+            ],
+            [
+              -85.5036663,
+              36.1735865
+            ],
+            [
+              -85.5036636,
+              36.1736115
+            ],
+            [
+              -85.5036626,
+              36.1736212
+            ],
+            [
+              -85.5035391,
+              36.1736124
+            ],
+            [
+              -85.5035309,
+              36.1736876
+            ],
+            [
+              -85.5034808,
+              36.173684
+            ],
+            [
+              -85.5034701,
+              36.173782
+            ],
+            [
+              -85.5035173,
+              36.1737853
+            ],
+            [
+              -85.5035094,
+              36.1738578
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188231727",
+      "properties": {
+        "@id": "way/188231727",
+        "building": "yes",
+        "leisure": "sports_centre",
+        "name": "Hooper Eblen Center",
+        "sport": "basketball",
+        "wikidata": "Q5331884"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.510398,
+              36.1785863
+            ],
+            [
+              -85.5104128,
+              36.1785138
+            ],
+            [
+              -85.5104184,
+              36.1784541
+            ],
+            [
+              -85.5104194,
+              36.1783622
+            ],
+            [
+              -85.510406,
+              36.1782951
+            ],
+            [
+              -85.5103712,
+              36.1782323
+            ],
+            [
+              -85.5102961,
+              36.1781587
+            ],
+            [
+              -85.5102446,
+              36.1781289
+            ],
+            [
+              -85.5101931,
+              36.1781055
+            ],
+            [
+              -85.5101029,
+              36.1780916
+            ],
+            [
+              -85.5098884,
+              36.1780742
+            ],
+            [
+              -85.5098026,
+              36.1780666
+            ],
+            [
+              -85.5097194,
+              36.1780612
+            ],
+            [
+              -85.5096457,
+              36.1780666
+            ],
+            [
+              -85.5095665,
+              36.1780905
+            ],
+            [
+              -85.5095001,
+              36.1781287
+            ],
+            [
+              -85.5094485,
+              36.1781695
+            ],
+            [
+              -85.509411,
+              36.178215
+            ],
+            [
+              -85.5093787,
+              36.1782821
+            ],
+            [
+              -85.5093654,
+              36.1783205
+            ],
+            [
+              -85.5092367,
+              36.1783102
+            ],
+            [
+              -85.5092274,
+              36.178384
+            ],
+            [
+              -85.5092232,
+              36.1784574
+            ],
+            [
+              -85.5093474,
+              36.1784645
+            ],
+            [
+              -85.5093535,
+              36.1785212
+            ],
+            [
+              -85.5093634,
+              36.1785835
+            ],
+            [
+              -85.5093948,
+              36.1786361
+            ],
+            [
+              -85.509427,
+              36.1786826
+            ],
+            [
+              -85.5094537,
+              36.1787051
+            ],
+            [
+              -85.5094994,
+              36.1787399
+            ],
+            [
+              -85.5095627,
+              36.1787713
+            ],
+            [
+              -85.5096379,
+              36.178794
+            ],
+            [
+              -85.5097585,
+              36.1788091
+            ],
+            [
+              -85.5098497,
+              36.1788167
+            ],
+            [
+              -85.50989,
+              36.17882
+            ],
+            [
+              -85.5100187,
+              36.1788243
+            ],
+            [
+              -85.5101244,
+              36.1788212
+            ],
+            [
+              -85.5102038,
+              36.178794
+            ],
+            [
+              -85.5102699,
+              36.1787589
+            ],
+            [
+              -85.5103057,
+              36.1787399
+            ],
+            [
+              -85.5103658,
+              36.1786696
+            ],
+            [
+              -85.510398,
+              36.1785863
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188231728",
+      "properties": {
+        "@id": "way/188231728",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "805",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "university",
+        "name": "Jere Whitson Memorial Building",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5034756,
+              36.1733938
+            ],
+            [
+              -85.5036662,
+              36.1734106
+            ],
+            [
+              -85.5036863,
+              36.1732627
+            ],
+            [
+              -85.5037788,
+              36.1732708
+            ],
+            [
+              -85.503795,
+              36.173151
+            ],
+            [
+              -85.5037033,
+              36.1731429
+            ],
+            [
+              -85.5037226,
+              36.1730001
+            ],
+            [
+              -85.5035266,
+              36.1729828
+            ],
+            [
+              -85.5035077,
+              36.1731225
+            ],
+            [
+              -85.5033727,
+              36.1731106
+            ],
+            [
+              -85.5033558,
+              36.1732361
+            ],
+            [
+              -85.5034953,
+              36.1732484
+            ],
+            [
+              -85.5034756,
+              36.1733938
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188606804",
+      "properties": {
+        "@id": "way/188606804",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "720",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "dormitory",
+        "name": "Daniel Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5048076,
+              36.1726017
+            ],
+            [
+              -85.5049953,
+              36.1726127
+            ],
+            [
+              -85.505159,
+              36.1726261
+            ],
+            [
+              -85.5051699,
+              36.1725204
+            ],
+            [
+              -85.5046875,
+              36.172486
+            ],
+            [
+              -85.5046842,
+              36.1725154
+            ],
+            [
+              -85.5046554,
+              36.1725134
+            ],
+            [
+              -85.504653,
+              36.1725352
+            ],
+            [
+              -85.5046507,
+              36.1725565
+            ],
+            [
+              -85.5046827,
+              36.1725588
+            ],
+            [
+              -85.5046586,
+              36.1727811
+            ],
+            [
+              -85.5047871,
+              36.172791
+            ],
+            [
+              -85.5048076,
+              36.1726017
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188606806",
+      "properties": {
+        "@id": "way/188606806",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "820",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "university",
+        "name": "Bartoo Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5047314,
+              36.1739676
+            ],
+            [
+              -85.5047422,
+              36.1738967
+            ],
+            [
+              -85.5048006,
+              36.1739025
+            ],
+            [
+              -85.5048178,
+              36.1737896
+            ],
+            [
+              -85.5047551,
+              36.1737833
+            ],
+            [
+              -85.5047656,
+              36.1737144
+            ],
+            [
+              -85.504635,
+              36.1737016
+            ],
+            [
+              -85.5045041,
+              36.1736885
+            ],
+            [
+              -85.5044919,
+              36.1737687
+            ],
+            [
+              -85.5045077,
+              36.1737706
+            ],
+            [
+              -85.5045046,
+              36.1738253
+            ],
+            [
+              -85.5044951,
+              36.1738779
+            ],
+            [
+              -85.5044763,
+              36.1738761
+            ],
+            [
+              -85.5044666,
+              36.1739415
+            ],
+            [
+              -85.5045619,
+              36.1739508
+            ],
+            [
+              -85.5047314,
+              36.1739676
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188606807",
+      "properties": {
+        "@id": "way/188606807",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "810",
+        "addr:postcode": "38501",
+        "addr:street": "Quadrangle",
+        "building": "university",
+        "name": "Memorial Gym",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5046806,
+              36.173539
+            ],
+            [
+              -85.5051717,
+              36.1735812
+            ],
+            [
+              -85.5051898,
+              36.1734438
+            ],
+            [
+              -85.505292,
+              36.1734526
+            ],
+            [
+              -85.5052873,
+              36.173488
+            ],
+            [
+              -85.5055217,
+              36.1735082
+            ],
+            [
+              -85.5055567,
+              36.1732428
+            ],
+            [
+              -85.5053282,
+              36.1732232
+            ],
+            [
+              -85.5053237,
+              36.1732572
+            ],
+            [
+              -85.505209,
+              36.1732473
+            ],
+            [
+              -85.5052277,
+              36.1731056
+            ],
+            [
+              -85.5047358,
+              36.1730633
+            ],
+            [
+              -85.5047227,
+              36.173162
+            ],
+            [
+              -85.5045984,
+              36.1731514
+            ],
+            [
+              -85.5045785,
+              36.1733027
+            ],
+            [
+              -85.5045616,
+              36.1734306
+            ],
+            [
+              -85.5046934,
+              36.1734419
+            ],
+            [
+              -85.5046891,
+              36.1734752
+            ],
+            [
+              -85.5046806,
+              36.173539
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188607597",
+      "properties": {
+        "@id": "way/188607597",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "90",
+        "addr:postcode": "38501",
+        "addr:street": "West 8th Street",
+        "building": "university",
+        "name": "ROTC",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5055243,
+              36.1729758
+            ],
+            [
+              -85.5055369,
+              36.1728913
+            ],
+            [
+              -85.5052782,
+              36.172866
+            ],
+            [
+              -85.5052655,
+              36.1729506
+            ],
+            [
+              -85.5055243,
+              36.1729758
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188659419",
+      "properties": {
+        "@id": "way/188659419",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "710",
+        "addr:postcode": "38501",
+        "addr:street": "North Peachtree Avenue",
+        "building": "dormitory",
+        "building:levels": "5",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Maddux Hall",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5061873,
+              36.1725411
+            ],
+            [
+              -85.5063632,
+              36.1725524
+            ],
+            [
+              -85.5064291,
+              36.1720762
+            ],
+            [
+              -85.5062476,
+              36.1720569
+            ],
+            [
+              -85.5061873,
+              36.1725411
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188659732",
+      "properties": {
+        "@id": "way/188659732",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "720",
+        "addr:postcode": "38501",
+        "addr:street": "North Peachtree Avenue",
+        "building": "dormitory",
+        "building:levels": "5",
+        "designation": "Residence Hall (Male Only)",
+        "name": "McCord Hall",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5063084,
+              36.1730242
+            ],
+            [
+              -85.5063632,
+              36.1725524
+            ],
+            [
+              -85.5061873,
+              36.1725411
+            ],
+            [
+              -85.5061309,
+              36.1730141
+            ],
+            [
+              -85.5063084,
+              36.1730242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188660173",
+      "properties": {
+        "@id": "way/188660173",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "105",
+        "addr:postcode": "38501",
+        "addr:street": "West 7th Street",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Cooper Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5070929,
+              36.1723668
+            ],
+            [
+              -85.5071058,
+              36.1722593
+            ],
+            [
+              -85.5069567,
+              36.1722475
+            ],
+            [
+              -85.5066353,
+              36.1722226
+            ],
+            [
+              -85.5066224,
+              36.1723301
+            ],
+            [
+              -85.5070929,
+              36.1723668
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188660392",
+      "properties": {
+        "@id": "way/188660392",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "115",
+        "addr:postcode": "38501",
+        "addr:street": "West 7th Street",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Dunn Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5075134,
+              36.1724026
+            ],
+            [
+              -85.5075276,
+              36.1722942
+            ],
+            [
+              -85.5071058,
+              36.1722593
+            ],
+            [
+              -85.5070929,
+              36.1723668
+            ],
+            [
+              -85.5075134,
+              36.1724026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188660457",
+      "properties": {
+        "@id": "way/188660457",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "120",
+        "addr:postcode": "38501",
+        "addr:street": "West 8th Street",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Warf Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.507021,
+              36.1729374
+            ],
+            [
+              -85.5070333,
+              36.1728368
+            ],
+            [
+              -85.506562,
+              36.1727995
+            ],
+            [
+              -85.5065482,
+              36.1729004
+            ],
+            [
+              -85.5067908,
+              36.172919
+            ],
+            [
+              -85.507021,
+              36.1729374
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188660869",
+      "properties": {
+        "@id": "way/188660869",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "130",
+        "addr:postcode": "38501",
+        "addr:street": "West 8th Street",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Ellington Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5074464,
+              36.1729713
+            ],
+            [
+              -85.5074587,
+              36.1728707
+            ],
+            [
+              -85.5070333,
+              36.1728368
+            ],
+            [
+              -85.507021,
+              36.1729374
+            ],
+            [
+              -85.5074464,
+              36.1729713
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188661151",
+      "properties": {
+        "@id": "way/188661151",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "705",
+        "addr:postcode": "38501",
+        "addr:street": "Stadium Drive",
+        "building": "dormitory",
+        "building:levels": "5",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Browning Hall",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5079129,
+              36.1726836
+            ],
+            [
+              -85.5079345,
+              36.1724493
+            ],
+            [
+              -85.5079561,
+              36.1722167
+            ],
+            [
+              -85.5078182,
+              36.1722047
+            ],
+            [
+              -85.50776,
+              36.1726737
+            ],
+            [
+              -85.5079129,
+              36.1726836
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188672050",
+      "properties": {
+        "@id": "way/188672050",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "715",
+        "addr:postcode": "38501",
+        "addr:street": "Stadium Drive",
+        "building": "dormitory",
+        "building:levels": "5",
+        "designation": "Residence Hall (Male only)",
+        "name": "Evins Hall",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5078608,
+              36.1731554
+            ],
+            [
+              -85.5078964,
+              36.17284
+            ],
+            [
+              -85.5079129,
+              36.1726836
+            ],
+            [
+              -85.50776,
+              36.1726737
+            ],
+            [
+              -85.5077038,
+              36.1731472
+            ],
+            [
+              -85.5078608,
+              36.1731554
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188771461",
+      "properties": {
+        "@id": "way/188771461",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1",
+        "addr:postcode": "38501",
+        "addr:street": "William L. Jones Drive",
+        "building": "university",
+        "designation": "Offices and Auditorium",
+        "name": "Derryberry Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5041279,
+              36.1744252
+            ],
+            [
+              -85.5039161,
+              36.1744067
+            ],
+            [
+              -85.5039118,
+              36.1744386
+            ],
+            [
+              -85.5037757,
+              36.1744298
+            ],
+            [
+              -85.5037483,
+              36.1746377
+            ],
+            [
+              -85.5038699,
+              36.1746474
+            ],
+            [
+              -85.5038572,
+              36.1747447
+            ],
+            [
+              -85.5037794,
+              36.174738
+            ],
+            [
+              -85.5037579,
+              36.1749017
+            ],
+            [
+              -85.5041511,
+              36.1749353
+            ],
+            [
+              -85.5041724,
+              36.174773
+            ],
+            [
+              -85.5041034,
+              36.1747671
+            ],
+            [
+              -85.5041158,
+              36.1746721
+            ],
+            [
+              -85.5042499,
+              36.1746836
+            ],
+            [
+              -85.5042622,
+              36.17459
+            ],
+            [
+              -85.5042774,
+              36.1744765
+            ],
+            [
+              -85.5041228,
+              36.174463
+            ],
+            [
+              -85.5041279,
+              36.1744252
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188771694",
+      "properties": {
+        "@id": "way/188771694",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "845",
+        "addr:postcode": "38501",
+        "addr:street": "North Dixie Avenue",
+        "building": "university",
+        "designation": "Printing Services, Heat Plant",
+        "name": "University Services Building",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5028749,
+              36.1741112
+            ],
+            [
+              -85.5028369,
+              36.1739792
+            ],
+            [
+              -85.5028659,
+              36.1739738
+            ],
+            [
+              -85.5028201,
+              36.1738145
+            ],
+            [
+              -85.5027853,
+              36.173821
+            ],
+            [
+              -85.5027505,
+              36.1736998
+            ],
+            [
+              -85.5024731,
+              36.1737518
+            ],
+            [
+              -85.5025918,
+              36.1741643
+            ],
+            [
+              -85.5028749,
+              36.1741112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188771866",
+      "properties": {
+        "@id": "way/188771866",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "905",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "North Dixie Avenue",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "New Hall-South",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5031114,
+              36.1749158
+            ],
+            [
+              -85.5030727,
+              36.1747848
+            ],
+            [
+              -85.5030473,
+              36.1747897
+            ],
+            [
+              -85.5030422,
+              36.1747722
+            ],
+            [
+              -85.5028324,
+              36.1748127
+            ],
+            [
+              -85.5028382,
+              36.174832
+            ],
+            [
+              -85.5027477,
+              36.1748495
+            ],
+            [
+              -85.5026732,
+              36.1748068
+            ],
+            [
+              -85.5025626,
+              36.1747434
+            ],
+            [
+              -85.5025424,
+              36.1746818
+            ],
+            [
+              -85.5025671,
+              36.1746765
+            ],
+            [
+              -85.5025049,
+              36.1744864
+            ],
+            [
+              -85.5023263,
+              36.1745245
+            ],
+            [
+              -85.5023753,
+              36.1746742
+            ],
+            [
+              -85.5023366,
+              36.1746825
+            ],
+            [
+              -85.5024023,
+              36.1748833
+            ],
+            [
+              -85.5023856,
+              36.1749101
+            ],
+            [
+              -85.502179,
+              36.1749491
+            ],
+            [
+              -85.5021875,
+              36.1749782
+            ],
+            [
+              -85.502159,
+              36.1749836
+            ],
+            [
+              -85.5021888,
+              36.1750863
+            ],
+            [
+              -85.5023516,
+              36.1750555
+            ],
+            [
+              -85.5023576,
+              36.1750761
+            ],
+            [
+              -85.502541,
+              36.1750413
+            ],
+            [
+              -85.5025511,
+              36.1750757
+            ],
+            [
+              -85.5026472,
+              36.1750574
+            ],
+            [
+              -85.5027374,
+              36.1750402
+            ],
+            [
+              -85.5027301,
+              36.175015
+            ],
+            [
+              -85.5029171,
+              36.1749792
+            ],
+            [
+              -85.5029099,
+              36.1749545
+            ],
+            [
+              -85.5031114,
+              36.1749158
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188773045",
+      "properties": {
+        "@id": "way/188773045",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1",
+        "addr:postcode": "38501",
+        "addr:street": "Golden Eagle Circle",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "New Hall-North",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5032242,
+              36.1752668
+            ],
+            [
+              -85.503181,
+              36.1751326
+            ],
+            [
+              -85.5029874,
+              36.1751732
+            ],
+            [
+              -85.5029936,
+              36.1751926
+            ],
+            [
+              -85.5028914,
+              36.1752138
+            ],
+            [
+              -85.5028851,
+              36.1751984
+            ],
+            [
+              -85.5026894,
+              36.1752414
+            ],
+            [
+              -85.5026818,
+              36.1752184
+            ],
+            [
+              -85.5025819,
+              36.1752393
+            ],
+            [
+              -85.502491,
+              36.1752583
+            ],
+            [
+              -85.5024993,
+              36.1752798
+            ],
+            [
+              -85.5023001,
+              36.1753181
+            ],
+            [
+              -85.5023065,
+              36.1753343
+            ],
+            [
+              -85.5021031,
+              36.1753712
+            ],
+            [
+              -85.5021432,
+              36.175501
+            ],
+            [
+              -85.5021809,
+              36.1754934
+            ],
+            [
+              -85.5021893,
+              36.1755208
+            ],
+            [
+              -85.5023879,
+              36.1754811
+            ],
+            [
+              -85.5023818,
+              36.1754614
+            ],
+            [
+              -85.5025001,
+              36.1754379
+            ],
+            [
+              -85.5025054,
+              36.1754553
+            ],
+            [
+              -85.502455,
+              36.1754652
+            ],
+            [
+              -85.5025194,
+              36.1756786
+            ],
+            [
+              -85.5025469,
+              36.1756732
+            ],
+            [
+              -85.5025645,
+              36.1757314
+            ],
+            [
+              -85.5025267,
+              36.1757388
+            ],
+            [
+              -85.5025419,
+              36.1757895
+            ],
+            [
+              -85.5025201,
+              36.1757938
+            ],
+            [
+              -85.5025384,
+              36.1758547
+            ],
+            [
+              -85.5025542,
+              36.1759086
+            ],
+            [
+              -85.5025875,
+              36.1759023
+            ],
+            [
+              -85.5026062,
+              36.1759664
+            ],
+            [
+              -85.5028691,
+              36.1759164
+            ],
+            [
+              -85.5028486,
+              36.1758461
+            ],
+            [
+              -85.5028726,
+              36.1758416
+            ],
+            [
+              -85.5028574,
+              36.1757897
+            ],
+            [
+              -85.5028433,
+              36.1757396
+            ],
+            [
+              -85.5028073,
+              36.1757463
+            ],
+            [
+              -85.5027915,
+              36.1756906
+            ],
+            [
+              -85.5027619,
+              36.175696
+            ],
+            [
+              -85.5027304,
+              36.1755851
+            ],
+            [
+              -85.5027009,
+              36.1755905
+            ],
+            [
+              -85.5026839,
+              36.1755306
+            ],
+            [
+              -85.5027431,
+              36.1754552
+            ],
+            [
+              -85.5028046,
+              36.1753769
+            ],
+            [
+              -85.5028818,
+              36.1753606
+            ],
+            [
+              -85.5028899,
+              36.1753855
+            ],
+            [
+              -85.5031083,
+              36.1753394
+            ],
+            [
+              -85.5031022,
+              36.1753204
+            ],
+            [
+              -85.5032001,
+              36.1752997
+            ],
+            [
+              -85.5031916,
+              36.1752736
+            ],
+            [
+              -85.5032242,
+              36.1752668
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188778986",
+      "properties": {
+        "@id": "way/188778986",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1005",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "North Dixie Avenue",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed, International)",
+        "name": "M.S. Cooper Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.503318,
+              36.1759323
+            ],
+            [
+              -85.503271,
+              36.1757715
+            ],
+            [
+              -85.5032167,
+              36.1757823
+            ],
+            [
+              -85.5031823,
+              36.1756692
+            ],
+            [
+              -85.5032056,
+              36.1756646
+            ],
+            [
+              -85.5031843,
+              36.1755944
+            ],
+            [
+              -85.5031615,
+              36.175599
+            ],
+            [
+              -85.5031381,
+              36.1755218
+            ],
+            [
+              -85.503034,
+              36.1755424
+            ],
+            [
+              -85.5030715,
+              36.1756658
+            ],
+            [
+              -85.5030289,
+              36.1756742
+            ],
+            [
+              -85.5030427,
+              36.1757197
+            ],
+            [
+              -85.5030813,
+              36.1757121
+            ],
+            [
+              -85.5030894,
+              36.1757387
+            ],
+            [
+              -85.503113,
+              36.1758165
+            ],
+            [
+              -85.5030811,
+              36.1758228
+            ],
+            [
+              -85.5031241,
+              36.1759675
+            ],
+            [
+              -85.503318,
+              36.1759323
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188794865",
+      "properties": {
+        "@id": "way/188794865",
+        "building": "grandstand",
+        "designation": "East side of the stadium & Army ROTC Classrooms",
+        "name": "Tucker Stadium (East)",
+        "operator": "Tennessee Technological University",
+        "sport": "american_football"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5052053,
+              36.1784547
+            ],
+            [
+              -85.505248,
+              36.1784587
+            ],
+            [
+              -85.5056036,
+              36.1784923
+            ],
+            [
+              -85.5057275,
+              36.177637
+            ],
+            [
+              -85.5054835,
+              36.177614
+            ],
+            [
+              -85.5053598,
+              36.1776023
+            ],
+            [
+              -85.5053293,
+              36.1775994
+            ],
+            [
+              -85.5052053,
+              36.1784547
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188795448",
+      "properties": {
+        "@id": "way/188795448",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "11",
+        "addr:postcode": "38501",
+        "addr:street": "William L. Jones Drive",
+        "building": "university",
+        "designation": "College of Education, Dept. of Counseling & Psychology, Honors Program",
+        "name": "T.J. Farr Building",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5048028,
+              36.1745993
+            ],
+            [
+              -85.5048188,
+              36.1744893
+            ],
+            [
+              -85.5048737,
+              36.1744945
+            ],
+            [
+              -85.5048956,
+              36.174344
+            ],
+            [
+              -85.5048294,
+              36.1743377
+            ],
+            [
+              -85.5048448,
+              36.1742314
+            ],
+            [
+              -85.5046613,
+              36.174214
+            ],
+            [
+              -85.5046079,
+              36.1745808
+            ],
+            [
+              -85.5048028,
+              36.1745993
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188795887",
+      "properties": {
+        "@id": "way/188795887",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "5",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "William L. Jones Drive",
+        "building": "university",
+        "designation": "Dept. of English & History, College of Arts & Sciences, School of Interdisciplinary Studies",
+        "name": "Henderson Hall",
+        "operator": "Tennessee Technological University",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5047643,
+              36.1753603
+            ],
+            [
+              -85.5047758,
+              36.1752645
+            ],
+            [
+              -85.5047775,
+              36.1752507
+            ],
+            [
+              -85.5048125,
+              36.1749405
+            ],
+            [
+              -85.5045895,
+              36.1749241
+            ],
+            [
+              -85.5045661,
+              36.1751315
+            ],
+            [
+              -85.5045406,
+              36.1753428
+            ],
+            [
+              -85.5047643,
+              36.1753603
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188796018",
+      "properties": {
+        "@id": "way/188796018",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1000",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "North Dixie Avenue",
+        "building": "university",
+        "building:levels": "4",
+        "designation": "University Center",
+        "name": "Roaden University Center",
+        "operator": "Tennessee Technological University",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5045049,
+              36.1759473
+            ],
+            [
+              -85.5044837,
+              36.1758781
+            ],
+            [
+              -85.5045506,
+              36.1758666
+            ],
+            [
+              -85.5045956,
+              36.1758563
+            ],
+            [
+              -85.5046322,
+              36.1758485
+            ],
+            [
+              -85.5046169,
+              36.1757983
+            ],
+            [
+              -85.5046707,
+              36.1757876
+            ],
+            [
+              -85.5046362,
+              36.1756745
+            ],
+            [
+              -85.504603,
+              36.175566
+            ],
+            [
+              -85.5045568,
+              36.1755752
+            ],
+            [
+              -85.5045391,
+              36.1755173
+            ],
+            [
+              -85.5043941,
+              36.1755462
+            ],
+            [
+              -85.5043762,
+              36.1755498
+            ],
+            [
+              -85.504354,
+              36.175477
+            ],
+            [
+              -85.5042243,
+              36.1755028
+            ],
+            [
+              -85.5040955,
+              36.1755284
+            ],
+            [
+              -85.5039597,
+              36.1755554
+            ],
+            [
+              -85.5039401,
+              36.1755593
+            ],
+            [
+              -85.5037869,
+              36.1755898
+            ],
+            [
+              -85.5038602,
+              36.1758302
+            ],
+            [
+              -85.5039308,
+              36.1760615
+            ],
+            [
+              -85.5041382,
+              36.1760203
+            ],
+            [
+              -85.5043939,
+              36.1759694
+            ],
+            [
+              -85.5045049,
+              36.1759473
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188796237",
+      "properties": {
+        "@id": "way/188796237",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1015",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "North Dixie Avenue",
+        "building": "dormitory",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Pinkerton Hall",
+        "operator": "Tennessee Technological University",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5033617,
+              36.1760631
+            ],
+            [
+              -85.503318,
+              36.1759323
+            ],
+            [
+              -85.5031241,
+              36.1759675
+            ],
+            [
+              -85.5031645,
+              36.1761139
+            ],
+            [
+              -85.5031971,
+              36.176108
+            ],
+            [
+              -85.5032067,
+              36.1761424
+            ],
+            [
+              -85.5031739,
+              36.1761484
+            ],
+            [
+              -85.5031866,
+              36.1761942
+            ],
+            [
+              -85.5032252,
+              36.1761872
+            ],
+            [
+              -85.5032331,
+              36.1762157
+            ],
+            [
+              -85.5032766,
+              36.1763723
+            ],
+            [
+              -85.5033894,
+              36.1763518
+            ],
+            [
+              -85.5033618,
+              36.1762523
+            ],
+            [
+              -85.5033782,
+              36.1762494
+            ],
+            [
+              -85.5033649,
+              36.1762013
+            ],
+            [
+              -85.5033354,
+              36.1762067
+            ],
+            [
+              -85.5032987,
+              36.1760745
+            ],
+            [
+              -85.5033617,
+              36.1760631
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188796315",
+      "properties": {
+        "@id": "way/188796315",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "35",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "Golden Eagle Circle",
+        "building": "dormitory",
+        "building:levels": "4",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Jobe Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5035735,
+              36.1766133
+            ],
+            [
+              -85.5035459,
+              36.1765197
+            ],
+            [
+              -85.5034464,
+              36.1765389
+            ],
+            [
+              -85.5034378,
+              36.1765098
+            ],
+            [
+              -85.5033644,
+              36.1765238
+            ],
+            [
+              -85.5033731,
+              36.1765533
+            ],
+            [
+              -85.5030441,
+              36.1766165
+            ],
+            [
+              -85.5030379,
+              36.1765953
+            ],
+            [
+              -85.5029679,
+              36.1766087
+            ],
+            [
+              -85.5029754,
+              36.176634
+            ],
+            [
+              -85.5029077,
+              36.176647
+            ],
+            [
+              -85.502818,
+              36.1767585
+            ],
+            [
+              -85.5035735,
+              36.1766133
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188796403",
+      "properties": {
+        "@id": "way/188796403",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "25",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "Golden Eagle Circle",
+        "building": "dormitory",
+        "building:levels": "4",
+        "designation": "Residence Hall (Co-ed)",
+        "name": "Murphy Hall",
+        "operator": "Tennessee Technological University",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5027423,
+              36.176127
+            ],
+            [
+              -85.5026345,
+              36.1761482
+            ],
+            [
+              -85.502818,
+              36.1767585
+            ],
+            [
+              -85.5029077,
+              36.176647
+            ],
+            [
+              -85.5028876,
+              36.1765803
+            ],
+            [
+              -85.5029154,
+              36.1765749
+            ],
+            [
+              -85.5028987,
+              36.1765193
+            ],
+            [
+              -85.5028639,
+              36.1765261
+            ],
+            [
+              -85.5027832,
+              36.1762577
+            ],
+            [
+              -85.5028261,
+              36.1762493
+            ],
+            [
+              -85.5028092,
+              36.1761934
+            ],
+            [
+              -85.5027649,
+              36.1762021
+            ],
+            [
+              -85.5027423,
+              36.176127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188797346",
+      "properties": {
+        "@id": "way/188797346",
+        "access": "private",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1155",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "North Dixie Avenue",
+        "building": "yes",
+        "historic": "manor",
+        "name": "Walton House (President's Residence)",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5008584,
+              36.1779918
+            ],
+            [
+              -85.5008535,
+              36.1778981
+            ],
+            [
+              -85.5008097,
+              36.1778996
+            ],
+            [
+              -85.5008059,
+              36.1778263
+            ],
+            [
+              -85.5008763,
+              36.177824
+            ],
+            [
+              -85.5008746,
+              36.1777897
+            ],
+            [
+              -85.5009117,
+              36.1777885
+            ],
+            [
+              -85.5009053,
+              36.1776646
+            ],
+            [
+              -85.5008713,
+              36.1776657
+            ],
+            [
+              -85.5008693,
+              36.1776271
+            ],
+            [
+              -85.500843,
+              36.177628
+            ],
+            [
+              -85.5008408,
+              36.1775839
+            ],
+            [
+              -85.5007553,
+              36.1775868
+            ],
+            [
+              -85.5007579,
+              36.1776367
+            ],
+            [
+              -85.5007441,
+              36.1776371
+            ],
+            [
+              -85.5007456,
+              36.1776655
+            ],
+            [
+              -85.5006697,
+              36.1776681
+            ],
+            [
+              -85.5006765,
+              36.1778012
+            ],
+            [
+              -85.5007529,
+              36.1777986
+            ],
+            [
+              -85.5007543,
+              36.1778274
+            ],
+            [
+              -85.50078,
+              36.1778266
+            ],
+            [
+              -85.500784,
+              36.1779044
+            ],
+            [
+              -85.5006788,
+              36.1779079
+            ],
+            [
+              -85.5006834,
+              36.1779977
+            ],
+            [
+              -85.5008584,
+              36.1779918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188797796",
+      "properties": {
+        "@id": "way/188797796",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "155",
+        "addr:postcode": "38501",
+        "addr:street": "West 7th Street",
+        "alt_name": "Millard Oakley STEM Center",
+        "building": "university",
+        "name": "Ray Morris Hall (Millard Oakley STEM Center)",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5088925,
+              36.1726166
+            ],
+            [
+              -85.5089155,
+              36.1724248
+            ],
+            [
+              -85.5088204,
+              36.1724174
+            ],
+            [
+              -85.5088361,
+              36.1722862
+            ],
+            [
+              -85.5086586,
+              36.1722723
+            ],
+            [
+              -85.5086615,
+              36.1722479
+            ],
+            [
+              -85.5084381,
+              36.1722305
+            ],
+            [
+              -85.508436,
+              36.1722483
+            ],
+            [
+              -85.5082546,
+              36.1722342
+            ],
+            [
+              -85.5082385,
+              36.172368
+            ],
+            [
+              -85.508196,
+              36.1723647
+            ],
+            [
+              -85.5081849,
+              36.1724574
+            ],
+            [
+              -85.508172,
+              36.1725644
+            ],
+            [
+              -85.5083909,
+              36.1725815
+            ],
+            [
+              -85.5083715,
+              36.172744
+            ],
+            [
+              -85.5086126,
+              36.1727628
+            ],
+            [
+              -85.5086326,
+              36.1725963
+            ],
+            [
+              -85.5088925,
+              36.1726166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188798025",
+      "properties": {
+        "@id": "way/188798025",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1010",
+        "addr:postcode": "38501",
+        "addr:street": "North Peachtree Avenue",
+        "building": "university",
+        "name": "Clement Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5060484,
+              36.1755433
+            ],
+            [
+              -85.5060962,
+              36.1751976
+            ],
+            [
+              -85.5060186,
+              36.1751906
+            ],
+            [
+              -85.5060223,
+              36.1751637
+            ],
+            [
+              -85.5060401,
+              36.1750325
+            ],
+            [
+              -85.5058323,
+              36.1750141
+            ],
+            [
+              -85.5058101,
+              36.1751778
+            ],
+            [
+              -85.5057442,
+              36.1751719
+            ],
+            [
+              -85.5057282,
+              36.17529
+            ],
+            [
+              -85.5057034,
+              36.1752878
+            ],
+            [
+              -85.5056949,
+              36.1753504
+            ],
+            [
+              -85.5056906,
+              36.1753849
+            ],
+            [
+              -85.5057263,
+              36.1753879
+            ],
+            [
+              -85.5057108,
+              36.1755107
+            ],
+            [
+              -85.5057588,
+              36.1755146
+            ],
+            [
+              -85.5057375,
+              36.175683
+            ],
+            [
+              -85.505956,
+              36.175701
+            ],
+            [
+              -85.5059739,
+              36.1755589
+            ],
+            [
+              -85.505977,
+              36.1755369
+            ],
+            [
+              -85.5060484,
+              36.1755433
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188798228",
+      "properties": {
+        "@id": "way/188798228",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "110",
+        "addr:postcode": "38501",
+        "addr:street": "University Drive",
+        "building": "university",
+        "building:levels": "4",
+        "description": "Building housing mathematics, physics, and computer science departments",
+        "name": "Bruner Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5069023,
+              36.1758359
+            ],
+            [
+              -85.5069105,
+              36.1757719
+            ],
+            [
+              -85.5069581,
+              36.1757759
+            ],
+            [
+              -85.5069663,
+              36.1757126
+            ],
+            [
+              -85.5069733,
+              36.1756571
+            ],
+            [
+              -85.5069276,
+              36.1756534
+            ],
+            [
+              -85.5069315,
+              36.1756218
+            ],
+            [
+              -85.5066141,
+              36.1755958
+            ],
+            [
+              -85.5063362,
+              36.1755725
+            ],
+            [
+              -85.5063315,
+              36.1756094
+            ],
+            [
+              -85.5062991,
+              36.1756067
+            ],
+            [
+              -85.5062904,
+              36.1756741
+            ],
+            [
+              -85.506282,
+              36.1757417
+            ],
+            [
+              -85.5063066,
+              36.1757437
+            ],
+            [
+              -85.5063014,
+              36.1757861
+            ],
+            [
+              -85.5066024,
+              36.1758175
+            ],
+            [
+              -85.5069023,
+              36.1758359
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188798229",
+      "properties": {
+        "@id": "way/188798229",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "115",
+        "addr:postcode": "38501",
+        "addr:street": "West 10th Street",
+        "building": "university",
+        "building:levels": "4",
+        "description": "Building housing mechanical and electrical engineering departments",
+        "name": "Brown Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5069469,
+              36.1752916
+            ],
+            [
+              -85.5069516,
+              36.175226
+            ],
+            [
+              -85.5069917,
+              36.1752294
+            ],
+            [
+              -85.5069962,
+              36.1751831
+            ],
+            [
+              -85.5070077,
+              36.1751085
+            ],
+            [
+              -85.5069616,
+              36.1751045
+            ],
+            [
+              -85.5069664,
+              36.1750685
+            ],
+            [
+              -85.5067324,
+              36.1750483
+            ],
+            [
+              -85.5067349,
+              36.1750295
+            ],
+            [
+              -85.5066991,
+              36.1750266
+            ],
+            [
+              -85.5066348,
+              36.1750209
+            ],
+            [
+              -85.5066319,
+              36.1750423
+            ],
+            [
+              -85.5063769,
+              36.1750204
+            ],
+            [
+              -85.5063715,
+              36.1750615
+            ],
+            [
+              -85.5063224,
+              36.1750572
+            ],
+            [
+              -85.5063143,
+              36.1751188
+            ],
+            [
+              -85.5063062,
+              36.1751803
+            ],
+            [
+              -85.5063506,
+              36.1751841
+            ],
+            [
+              -85.5063445,
+              36.1752357
+            ],
+            [
+              -85.5066789,
+              36.1752679
+            ],
+            [
+              -85.5069469,
+              36.1752916
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188798418",
+      "properties": {
+        "@id": "way/188798418",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1020",
+        "addr:postcode": "38501",
+        "addr:street": "Stadium Drive",
+        "building": "university",
+        "building:levels": "4",
+        "description": "Building housing civil and chemical engineering departments",
+        "name": "Prescott Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5074666,
+              36.1758621
+            ],
+            [
+              -85.5075081,
+              36.1755396
+            ],
+            [
+              -85.5075614,
+              36.1751386
+            ],
+            [
+              -85.5074102,
+              36.1751255
+            ],
+            [
+              -85.5072401,
+              36.1751112
+            ],
+            [
+              -85.5072159,
+              36.1752992
+            ],
+            [
+              -85.507165,
+              36.1756908
+            ],
+            [
+              -85.5071461,
+              36.175835
+            ],
+            [
+              -85.507328,
+              36.1758505
+            ],
+            [
+              -85.5074666,
+              36.1758621
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188799892",
+      "properties": {
+        "@id": "way/188799892",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "110",
+        "addr:postcode": "38501",
+        "addr:street": "West 10th Street",
+        "building": "university",
+        "name": "Foundry",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5066278,
+              36.1747546
+            ],
+            [
+              -85.5066506,
+              36.1745629
+            ],
+            [
+              -85.5064859,
+              36.1745502
+            ],
+            [
+              -85.5064631,
+              36.1747419
+            ],
+            [
+              -85.5066278,
+              36.1747546
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188799896",
+      "properties": {
+        "@id": "way/188799896",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "920",
+        "addr:postcode": "38501",
+        "addr:street": "North Peachtree Avenue",
+        "building": "university",
+        "building:levels": "2",
+        "name": "Lewis Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5061701,
+              36.1747351
+            ],
+            [
+              -85.5062291,
+              36.1742798
+            ],
+            [
+              -85.506051,
+              36.1742628
+            ],
+            [
+              -85.5057886,
+              36.1742427
+            ],
+            [
+              -85.5057296,
+              36.1746979
+            ],
+            [
+              -85.5061701,
+              36.1747351
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188800523",
+      "properties": {
+        "@id": "way/188800523",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "200",
+        "addr:postcode": "38501",
+        "addr:street": "West 10th Street",
+        "building": "university",
+        "building:levels": "1",
+        "name": "Southwest Hall",
+        "operator": "Tennessee Technological University",
+        "source": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5089286,
+              36.1746594
+            ],
+            [
+              -85.5089631,
+              36.17437
+            ],
+            [
+              -85.5088893,
+              36.1743643
+            ],
+            [
+              -85.5088867,
+              36.1743866
+            ],
+            [
+              -85.5087956,
+              36.1743798
+            ],
+            [
+              -85.5087991,
+              36.1743499
+            ],
+            [
+              -85.5085752,
+              36.1743334
+            ],
+            [
+              -85.5085931,
+              36.174175
+            ],
+            [
+              -85.5084312,
+              36.1741631
+            ],
+            [
+              -85.5084128,
+              36.1743272
+            ],
+            [
+              -85.5082661,
+              36.1743165
+            ],
+            [
+              -85.5082539,
+              36.1744259
+            ],
+            [
+              -85.5083922,
+              36.174436
+            ],
+            [
+              -85.5083826,
+              36.1745216
+            ],
+            [
+              -85.5083712,
+              36.1746191
+            ],
+            [
+              -85.5083676,
+              36.1746489
+            ],
+            [
+              -85.5085177,
+              36.1746609
+            ],
+            [
+              -85.5085143,
+              36.1746887
+            ],
+            [
+              -85.5086598,
+              36.1747003
+            ],
+            [
+              -85.5086668,
+              36.1746429
+            ],
+            [
+              -85.5087177,
+              36.1746469
+            ],
+            [
+              -85.508724,
+              36.1745947
+            ],
+            [
+              -85.5087996,
+              36.1746006
+            ],
+            [
+              -85.5087938,
+              36.1746489
+            ],
+            [
+              -85.5089286,
+              36.1746594
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188800799",
+      "properties": {
+        "@id": "way/188800799",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "210",
+        "addr:postcode": "38501",
+        "addr:street": "West 10th Street",
+        "building": "university",
+        "name": "Otis Carroll Building",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5097146,
+              36.1747403
+            ],
+            [
+              -85.5097667,
+              36.1744439
+            ],
+            [
+              -85.5096741,
+              36.1744333
+            ],
+            [
+              -85.5096864,
+              36.1743635
+            ],
+            [
+              -85.5094533,
+              36.1743368
+            ],
+            [
+              -85.5093889,
+              36.1747029
+            ],
+            [
+              -85.5097146,
+              36.1747403
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188800801",
+      "properties": {
+        "@id": "way/188800801",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "925",
+        "addr:postcode": "38501",
+        "addr:street": "North Whitney Avenue",
+        "building": "university",
+        "name": "George & Ridley Carr Building",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5097182,
+              36.1743462
+            ],
+            [
+              -85.5097528,
+              36.1741686
+            ],
+            [
+              -85.5094681,
+              36.1741324
+            ],
+            [
+              -85.5094446,
+              36.1742528
+            ],
+            [
+              -85.5095791,
+              36.1742699
+            ],
+            [
+              -85.509568,
+              36.1743271
+            ],
+            [
+              -85.5097182,
+              36.1743462
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188800802",
+      "properties": {
+        "@id": "way/188800802",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "915",
+        "addr:postcode": "38501",
+        "addr:street": "North Whitney Avenue",
+        "building": "university",
+        "building:levels": "2",
+        "name": "Maintenance Warehouse",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5103252,
+              36.174462
+            ],
+            [
+              -85.5103671,
+              36.1742307
+            ],
+            [
+              -85.5098745,
+              36.1741725
+            ],
+            [
+              -85.5098326,
+              36.1744038
+            ],
+            [
+              -85.5103252,
+              36.174462
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188800804",
+      "properties": {
+        "@id": "way/188800804",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "220",
+        "addr:postcode": "38501",
+        "addr:street": "West 10th Street",
+        "building": "university",
+        "building:levels": "2",
+        "name": "Facilities/Business Services Building",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5101626,
+              36.1750492
+            ],
+            [
+              -85.5101883,
+              36.1749063
+            ],
+            [
+              -85.5098383,
+              36.1748653
+            ],
+            [
+              -85.5098126,
+              36.1750082
+            ],
+            [
+              -85.5101626,
+              36.1750492
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188800805",
+      "properties": {
+        "@id": "way/188800805",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "214",
+        "addr:postcode": "38501",
+        "addr:street": "West 10th Street",
+        "building": "university",
+        "building:levels": "2",
+        "name": "Motor Pool Garage",
+        "operator": "Tennessee Technological University",
+        "roof:levels": "0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5105289,
+              36.17495
+            ],
+            [
+              -85.5106079,
+              36.1744769
+            ],
+            [
+              -85.5104376,
+              36.1744584
+            ],
+            [
+              -85.5103586,
+              36.1749314
+            ],
+            [
+              -85.5105289,
+              36.17495
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188806213",
+      "properties": {
+        "@id": "way/188806213",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1105",
+        "addr:postcode": "38501",
+        "addr:street": "North Peachtree Avenue",
+        "building": "university",
+        "name": "Johnson Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5050559,
+              36.1770376
+            ],
+            [
+              -85.5050864,
+              36.1767945
+            ],
+            [
+              -85.50512,
+              36.1765344
+            ],
+            [
+              -85.5050523,
+              36.1765286
+            ],
+            [
+              -85.5049687,
+              36.1765217
+            ],
+            [
+              -85.5048852,
+              36.1765139
+            ],
+            [
+              -85.5047739,
+              36.1765053
+            ],
+            [
+              -85.5047129,
+              36.1769593
+            ],
+            [
+              -85.5047064,
+              36.1770073
+            ],
+            [
+              -85.5047314,
+              36.1770101
+            ],
+            [
+              -85.5048922,
+              36.1770284
+            ],
+            [
+              -85.5050559,
+              36.1770376
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188806214",
+      "properties": {
+        "@id": "way/188806214",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1100",
+        "addr:postcode": "38501",
+        "addr:street": "North Dixie Avenue",
+        "building": "university",
+        "name": "Pennebaker Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5045342,
+              36.177007
+            ],
+            [
+              -85.5043735,
+              36.1765327
+            ],
+            [
+              -85.5043126,
+              36.1765461
+            ],
+            [
+              -85.5042961,
+              36.1764974
+            ],
+            [
+              -85.5041385,
+              36.1765322
+            ],
+            [
+              -85.5041549,
+              36.1765807
+            ],
+            [
+              -85.5041032,
+              36.1765921
+            ],
+            [
+              -85.5041587,
+              36.1767559
+            ],
+            [
+              -85.5041136,
+              36.1767659
+            ],
+            [
+              -85.5041595,
+              36.1769013
+            ],
+            [
+              -85.5041957,
+              36.1768933
+            ],
+            [
+              -85.5042538,
+              36.177065
+            ],
+            [
+              -85.5043005,
+              36.1770547
+            ],
+            [
+              -85.5043128,
+              36.1770909
+            ],
+            [
+              -85.5044704,
+              36.1770561
+            ],
+            [
+              -85.5044594,
+              36.1770235
+            ],
+            [
+              -85.5045342,
+              36.177007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188806580",
+      "properties": {
+        "@id": "way/188806580",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "1100",
+        "addr:postcode": "38501",
+        "addr:street": "North Peachtree Avenue",
+        "amenity": "library",
+        "building": "university",
+        "building:levels": "5",
+        "designation": "University Library",
+        "name": "Volpe Library and Media Center",
+        "operator": "Tennessee Technological University",
+        "operator:type": "university"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5066627,
+              36.1764469
+            ],
+            [
+              -85.5066932,
+              36.1761851
+            ],
+            [
+              -85.5063668,
+              36.1761604
+            ],
+            [
+              -85.5063624,
+              36.1761977
+            ],
+            [
+              -85.5062209,
+              36.176187
+            ],
+            [
+              -85.5061005,
+              36.1762638
+            ],
+            [
+              -85.5060097,
+              36.1761712
+            ],
+            [
+              -85.5058513,
+              36.1762723
+            ],
+            [
+              -85.5058349,
+              36.1762556
+            ],
+            [
+              -85.5057963,
+              36.1762802
+            ],
+            [
+              -85.5057434,
+              36.176314
+            ],
+            [
+              -85.5057602,
+              36.1763311
+            ],
+            [
+              -85.5055983,
+              36.1764347
+            ],
+            [
+              -85.5056886,
+              36.1765267
+            ],
+            [
+              -85.50558,
+              36.1765962
+            ],
+            [
+              -85.5055692,
+              36.176711
+            ],
+            [
+              -85.5055338,
+              36.1767162
+            ],
+            [
+              -85.5054944,
+              36.176968
+            ],
+            [
+              -85.5058073,
+              36.1769999
+            ],
+            [
+              -85.5058367,
+              36.1767723
+            ],
+            [
+              -85.5057993,
+              36.1767335
+            ],
+            [
+              -85.5058047,
+              36.1766989
+            ],
+            [
+              -85.5059177,
+              36.1768028
+            ],
+            [
+              -85.5063459,
+              36.1764994
+            ],
+            [
+              -85.5062424,
+              36.1764042
+            ],
+            [
+              -85.5062799,
+              36.1763776
+            ],
+            [
+              -85.5063275,
+              36.1763812
+            ],
+            [
+              -85.5063229,
+              36.1764211
+            ],
+            [
+              -85.5066627,
+              36.1764469
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188808569",
+      "properties": {
+        "@id": "way/188808569",
+        "amenity": "university",
+        "building": "yes",
+        "name": "Averitt Baseball Complex"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5136146,
+              36.1771057
+            ],
+            [
+              -85.5136329,
+              36.1768772
+            ],
+            [
+              -85.5134802,
+              36.1768692
+            ],
+            [
+              -85.5134619,
+              36.1770977
+            ],
+            [
+              -85.5136146,
+              36.1771057
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188808570",
+      "properties": {
+        "@id": "way/188808570",
+        "amenity": "university",
+        "building": "yes",
+        "name": "Averitt Baseball Complex"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5139592,
+              36.1771148
+            ],
+            [
+              -85.5139865,
+              36.1769858
+            ],
+            [
+              -85.5137009,
+              36.1769464
+            ],
+            [
+              -85.5136736,
+              36.1770755
+            ],
+            [
+              -85.5139592,
+              36.1771148
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188808918",
+      "properties": {
+        "@id": "way/188808918",
+        "building": "yes",
+        "leisure": "stadium",
+        "name": "Averitt Baseball Complex"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5134324,
+              36.1771299
+            ],
+            [
+              -85.5134401,
+              36.1770324
+            ],
+            [
+              -85.5132436,
+              36.1770224
+            ],
+            [
+              -85.5132094,
+              36.1770434
+            ],
+            [
+              -85.5131935,
+              36.1770266
+            ],
+            [
+              -85.5130944,
+              36.1770876
+            ],
+            [
+              -85.5131151,
+              36.1771095
+            ],
+            [
+              -85.5130773,
+              36.1771328
+            ],
+            [
+              -85.5130486,
+              36.1772767
+            ],
+            [
+              -85.5131383,
+              36.1772883
+            ],
+            [
+              -85.5131574,
+              36.1771922
+            ],
+            [
+              -85.5132355,
+              36.1771199
+            ],
+            [
+              -85.5134324,
+              36.1771299
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188809395",
+      "properties": {
+        "@id": "way/188809395",
+        "amenity": "university",
+        "building": "yes",
+        "name": "Tech Softball Field"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5132007,
+              36.1783193
+            ],
+            [
+              -85.513207,
+              36.1782455
+            ],
+            [
+              -85.5131377,
+              36.1782371
+            ],
+            [
+              -85.513127,
+              36.1782674
+            ],
+            [
+              -85.5130789,
+              36.1782497
+            ],
+            [
+              -85.5130089,
+              36.1782998
+            ],
+            [
+              -85.5130371,
+              36.1783388
+            ],
+            [
+              -85.5129875,
+              36.1783528
+            ],
+            [
+              -85.5129795,
+              36.1783994
+            ],
+            [
+              -85.5130559,
+              36.178407
+            ],
+            [
+              -85.5130582,
+              36.1783656
+            ],
+            [
+              -85.5131412,
+              36.1783115
+            ],
+            [
+              -85.5132007,
+              36.1783193
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188809732",
+      "properties": {
+        "@id": "way/188809732",
+        "building": "university",
+        "name": "Athletic Performance Center"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.516246,
+              36.1786127
+            ],
+            [
+              -85.5162832,
+              36.1783239
+            ],
+            [
+              -85.5155621,
+              36.1782635
+            ],
+            [
+              -85.5155239,
+              36.1785603
+            ],
+            [
+              -85.5156892,
+              36.1785742
+            ],
+            [
+              -85.5156727,
+              36.178703
+            ],
+            [
+              -85.5157836,
+              36.1787123
+            ],
+            [
+              -85.5157859,
+              36.1786944
+            ],
+            [
+              -85.5158261,
+              36.1786978
+            ],
+            [
+              -85.5158239,
+              36.1787148
+            ],
+            [
+              -85.515919,
+              36.1787227
+            ],
+            [
+              -85.5159214,
+              36.1787042
+            ],
+            [
+              -85.5160608,
+              36.1787159
+            ],
+            [
+              -85.5160759,
+              36.1785985
+            ],
+            [
+              -85.516246,
+              36.1786127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810511",
+      "properties": {
+        "@id": "way/188810511",
+        "amenity": "university",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5134995,
+              36.1753043
+            ],
+            [
+              -85.5135056,
+              36.1752645
+            ],
+            [
+              -85.5135381,
+              36.1752678
+            ],
+            [
+              -85.5135559,
+              36.1751525
+            ],
+            [
+              -85.5135217,
+              36.175149
+            ],
+            [
+              -85.5135283,
+              36.1751066
+            ],
+            [
+              -85.5133459,
+              36.1750882
+            ],
+            [
+              -85.5133351,
+              36.175158
+            ],
+            [
+              -85.5133656,
+              36.1751611
+            ],
+            [
+              -85.5133559,
+              36.1752239
+            ],
+            [
+              -85.5133255,
+              36.1752208
+            ],
+            [
+              -85.5133155,
+              36.1752858
+            ],
+            [
+              -85.5134995,
+              36.1753043
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810513",
+      "properties": {
+        "@id": "way/188810513",
+        "amenity": "university",
+        "building": "residential"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5121176,
+              36.1751696
+            ],
+            [
+              -85.5121252,
+              36.1751169
+            ],
+            [
+              -85.5121544,
+              36.1751196
+            ],
+            [
+              -85.5121677,
+              36.1750276
+            ],
+            [
+              -85.5121487,
+              36.1750258
+            ],
+            [
+              -85.512157,
+              36.1749682
+            ],
+            [
+              -85.5119793,
+              36.1749515
+            ],
+            [
+              -85.5119726,
+              36.1749982
+            ],
+            [
+              -85.5118956,
+              36.174991
+            ],
+            [
+              -85.511879,
+              36.1751057
+            ],
+            [
+              -85.5119636,
+              36.1751137
+            ],
+            [
+              -85.5119577,
+              36.1751546
+            ],
+            [
+              -85.5121176,
+              36.1751696
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810514",
+      "properties": {
+        "@id": "way/188810514",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5148818,
+              36.1751126
+            ],
+            [
+              -85.5147878,
+              36.1751035
+            ],
+            [
+              -85.5147715,
+              36.1752123
+            ],
+            [
+              -85.5147304,
+              36.1752083
+            ],
+            [
+              -85.5147198,
+              36.1752793
+            ],
+            [
+              -85.5147598,
+              36.1752832
+            ],
+            [
+              -85.5147433,
+              36.1753936
+            ],
+            [
+              -85.5148394,
+              36.1754029
+            ],
+            [
+              -85.5148489,
+              36.1753393
+            ],
+            [
+              -85.5148644,
+              36.1753408
+            ],
+            [
+              -85.5148874,
+              36.175187
+            ],
+            [
+              -85.5148709,
+              36.1751854
+            ],
+            [
+              -85.5148818,
+              36.1751126
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810517",
+      "properties": {
+        "@id": "way/188810517",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5140372,
+              36.1756127
+            ],
+            [
+              -85.5141313,
+              36.1756217
+            ],
+            [
+              -85.5141473,
+              36.1755128
+            ],
+            [
+              -85.5141884,
+              36.1755168
+            ],
+            [
+              -85.5141988,
+              36.1754457
+            ],
+            [
+              -85.5141588,
+              36.1754419
+            ],
+            [
+              -85.514175,
+              36.1753316
+            ],
+            [
+              -85.514079,
+              36.1753223
+            ],
+            [
+              -85.5140696,
+              36.175386
+            ],
+            [
+              -85.5140541,
+              36.1753845
+            ],
+            [
+              -85.5140314,
+              36.1755383
+            ],
+            [
+              -85.514048,
+              36.1755399
+            ],
+            [
+              -85.5140372,
+              36.1756127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810519",
+      "properties": {
+        "@id": "way/188810519",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5140188,
+              36.1746348
+            ],
+            [
+              -85.5140297,
+              36.174557
+            ],
+            [
+              -85.5139478,
+              36.1745495
+            ],
+            [
+              -85.5139496,
+              36.1745368
+            ],
+            [
+              -85.5137614,
+              36.1745196
+            ],
+            [
+              -85.5137598,
+              36.174531
+            ],
+            [
+              -85.5136741,
+              36.1745232
+            ],
+            [
+              -85.5136631,
+              36.1746016
+            ],
+            [
+              -85.5137908,
+              36.1746132
+            ],
+            [
+              -85.5137868,
+              36.1746417
+            ],
+            [
+              -85.5138848,
+              36.1746506
+            ],
+            [
+              -85.5138887,
+              36.1746229
+            ],
+            [
+              -85.5140188,
+              36.1746348
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810522",
+      "properties": {
+        "@id": "way/188810522",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5140879,
+              36.175223
+            ],
+            [
+              -85.5141819,
+              36.1752321
+            ],
+            [
+              -85.514198,
+              36.1751232
+            ],
+            [
+              -85.514239,
+              36.1751271
+            ],
+            [
+              -85.5142495,
+              36.1750561
+            ],
+            [
+              -85.5142094,
+              36.1750523
+            ],
+            [
+              -85.5142257,
+              36.1749419
+            ],
+            [
+              -85.5141296,
+              36.1749327
+            ],
+            [
+              -85.5141202,
+              36.1749963
+            ],
+            [
+              -85.5141047,
+              36.1749948
+            ],
+            [
+              -85.5140821,
+              36.1751487
+            ],
+            [
+              -85.5140986,
+              36.1751502
+            ],
+            [
+              -85.5140879,
+              36.175223
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810523",
+      "properties": {
+        "@id": "way/188810523",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5121686,
+              36.1759989
+            ],
+            [
+              -85.5121738,
+              36.175964
+            ],
+            [
+              -85.5122101,
+              36.1759676
+            ],
+            [
+              -85.5122231,
+              36.1758811
+            ],
+            [
+              -85.512184,
+              36.1758772
+            ],
+            [
+              -85.5121925,
+              36.1758207
+            ],
+            [
+              -85.5122346,
+              36.1758248
+            ],
+            [
+              -85.5122453,
+              36.1757537
+            ],
+            [
+              -85.5122091,
+              36.1757501
+            ],
+            [
+              -85.5122156,
+              36.175707
+            ],
+            [
+              -85.5120962,
+              36.1756953
+            ],
+            [
+              -85.5120522,
+              36.1759874
+            ],
+            [
+              -85.5121686,
+              36.1759989
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810525",
+      "properties": {
+        "@id": "way/188810525",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.513876,
+              36.1748099
+            ],
+            [
+              -85.5137818,
+              36.1748014
+            ],
+            [
+              -85.5137664,
+              36.1749115
+            ],
+            [
+              -85.5137436,
+              36.1749095
+            ],
+            [
+              -85.5137337,
+              36.1749805
+            ],
+            [
+              -85.5137537,
+              36.1749823
+            ],
+            [
+              -85.5137384,
+              36.1750916
+            ],
+            [
+              -85.5138343,
+              36.1751003
+            ],
+            [
+              -85.5138432,
+              36.175037
+            ],
+            [
+              -85.5138598,
+              36.1750385
+            ],
+            [
+              -85.5138813,
+              36.1748845
+            ],
+            [
+              -85.5138658,
+              36.1748831
+            ],
+            [
+              -85.513876,
+              36.1748099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810528",
+      "properties": {
+        "@id": "way/188810528",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5138024,
+              36.1753759
+            ],
+            [
+              -85.5137083,
+              36.1753667
+            ],
+            [
+              -85.5136921,
+              36.1754756
+            ],
+            [
+              -85.513651,
+              36.1754716
+            ],
+            [
+              -85.5136404,
+              36.1755426
+            ],
+            [
+              -85.5136804,
+              36.1755465
+            ],
+            [
+              -85.5136639,
+              36.1756568
+            ],
+            [
+              -85.51376,
+              36.1756662
+            ],
+            [
+              -85.5137695,
+              36.1756025
+            ],
+            [
+              -85.513785,
+              36.175604
+            ],
+            [
+              -85.513808,
+              36.1754503
+            ],
+            [
+              -85.5137915,
+              36.1754487
+            ],
+            [
+              -85.5138024,
+              36.1753759
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810530",
+      "properties": {
+        "@id": "way/188810530",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5147702,
+              36.1743241
+            ],
+            [
+              -85.5146762,
+              36.1743149
+            ],
+            [
+              -85.5146599,
+              36.1744238
+            ],
+            [
+              -85.5146189,
+              36.1744198
+            ],
+            [
+              -85.5146083,
+              36.1744908
+            ],
+            [
+              -85.5146483,
+              36.1744947
+            ],
+            [
+              -85.5146318,
+              36.174605
+            ],
+            [
+              -85.5147279,
+              36.1746144
+            ],
+            [
+              -85.5147374,
+              36.1745508
+            ],
+            [
+              -85.5147529,
+              36.1745523
+            ],
+            [
+              -85.5147759,
+              36.1743985
+            ],
+            [
+              -85.5147594,
+              36.1743969
+            ],
+            [
+              -85.5147702,
+              36.1743241
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810531",
+      "properties": {
+        "@id": "way/188810531",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5135739,
+              36.1745874
+            ],
+            [
+              -85.5135848,
+              36.1745096
+            ],
+            [
+              -85.513503,
+              36.1745021
+            ],
+            [
+              -85.5135048,
+              36.1744894
+            ],
+            [
+              -85.5133166,
+              36.1744722
+            ],
+            [
+              -85.513315,
+              36.1744836
+            ],
+            [
+              -85.5132292,
+              36.1744758
+            ],
+            [
+              -85.5132182,
+              36.1745542
+            ],
+            [
+              -85.5133459,
+              36.1745658
+            ],
+            [
+              -85.513342,
+              36.1745943
+            ],
+            [
+              -85.5134399,
+              36.1746032
+            ],
+            [
+              -85.5134438,
+              36.1745755
+            ],
+            [
+              -85.5135739,
+              36.1745874
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810532",
+      "properties": {
+        "@id": "way/188810532",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5146099,
+              36.175381
+            ],
+            [
+              -85.5145159,
+              36.1753718
+            ],
+            [
+              -85.5144996,
+              36.1754807
+            ],
+            [
+              -85.5144586,
+              36.1754767
+            ],
+            [
+              -85.514448,
+              36.1755476
+            ],
+            [
+              -85.514488,
+              36.1755516
+            ],
+            [
+              -85.5144715,
+              36.1756619
+            ],
+            [
+              -85.5145675,
+              36.1756712
+            ],
+            [
+              -85.5145771,
+              36.1756076
+            ],
+            [
+              -85.5145926,
+              36.1756091
+            ],
+            [
+              -85.5146156,
+              36.1754554
+            ],
+            [
+              -85.5145991,
+              36.1754537
+            ],
+            [
+              -85.5146099,
+              36.175381
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810534",
+      "properties": {
+        "@id": "way/188810534",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5149519,
+              36.1746287
+            ],
+            [
+              -85.5148579,
+              36.1746195
+            ],
+            [
+              -85.5148416,
+              36.1747284
+            ],
+            [
+              -85.5148006,
+              36.1747244
+            ],
+            [
+              -85.51479,
+              36.1747954
+            ],
+            [
+              -85.51483,
+              36.1747993
+            ],
+            [
+              -85.5148135,
+              36.1749096
+            ],
+            [
+              -85.5149095,
+              36.174919
+            ],
+            [
+              -85.5149191,
+              36.1748553
+            ],
+            [
+              -85.5149346,
+              36.1748569
+            ],
+            [
+              -85.5149576,
+              36.1747031
+            ],
+            [
+              -85.514941,
+              36.1747015
+            ],
+            [
+              -85.5149519,
+              36.1746287
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810538",
+      "properties": {
+        "@id": "way/188810538",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5140712,
+              36.1743304
+            ],
+            [
+              -85.5140823,
+              36.1742545
+            ],
+            [
+              -85.5139474,
+              36.1742416
+            ],
+            [
+              -85.5139523,
+              36.1742084
+            ],
+            [
+              -85.5138643,
+              36.1742
+            ],
+            [
+              -85.5138595,
+              36.1742323
+            ],
+            [
+              -85.5137228,
+              36.1742193
+            ],
+            [
+              -85.5137115,
+              36.1742968
+            ],
+            [
+              -85.5137903,
+              36.1743044
+            ],
+            [
+              -85.5137885,
+              36.1743169
+            ],
+            [
+              -85.513979,
+              36.1743351
+            ],
+            [
+              -85.513981,
+              36.1743218
+            ],
+            [
+              -85.5140712,
+              36.1743304
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810543",
+      "properties": {
+        "@id": "way/188810543",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5136239,
+              36.1742856
+            ],
+            [
+              -85.513635,
+              36.1742097
+            ],
+            [
+              -85.5135001,
+              36.1741968
+            ],
+            [
+              -85.513505,
+              36.1741636
+            ],
+            [
+              -85.513417,
+              36.1741552
+            ],
+            [
+              -85.5134123,
+              36.1741875
+            ],
+            [
+              -85.5132756,
+              36.1741745
+            ],
+            [
+              -85.5132642,
+              36.174252
+            ],
+            [
+              -85.513343,
+              36.1742596
+            ],
+            [
+              -85.5133412,
+              36.1742721
+            ],
+            [
+              -85.5135317,
+              36.1742903
+            ],
+            [
+              -85.5135337,
+              36.174277
+            ],
+            [
+              -85.5136239,
+              36.1742856
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188810546",
+      "properties": {
+        "@id": "way/188810546",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5141777,
+              36.1746636
+            ],
+            [
+              -85.5142717,
+              36.1746726
+            ],
+            [
+              -85.5142878,
+              36.1745637
+            ],
+            [
+              -85.5143288,
+              36.1745677
+            ],
+            [
+              -85.5143393,
+              36.1744967
+            ],
+            [
+              -85.5142993,
+              36.1744928
+            ],
+            [
+              -85.5143142,
+              36.1743933
+            ],
+            [
+              -85.5142194,
+              36.1743841
+            ],
+            [
+              -85.5142101,
+              36.1744369
+            ],
+            [
+              -85.5141945,
+              36.1744354
+            ],
+            [
+              -85.5141719,
+              36.1745892
+            ],
+            [
+              -85.5141884,
+              36.1745908
+            ],
+            [
+              -85.5141777,
+              36.1746636
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188811487",
+      "properties": {
+        "@id": "way/188811487",
+        "building": "university",
+        "name": "Academic Wellness Center"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5103171,
+              36.1793202
+            ],
+            [
+              -85.5103466,
+              36.1793093
+            ],
+            [
+              -85.5103765,
+              36.1792738
+            ],
+            [
+              -85.510406,
+              36.1790205
+            ],
+            [
+              -85.5104006,
+              36.1789881
+            ],
+            [
+              -85.5103872,
+              36.1789664
+            ],
+            [
+              -85.5103499,
+              36.1789611
+            ],
+            [
+              -85.5103019,
+              36.178955
+            ],
+            [
+              -85.5100561,
+              36.1789285
+            ],
+            [
+              -85.5098621,
+              36.17891
+            ],
+            [
+              -85.5093358,
+              36.1788668
+            ],
+            [
+              -85.5093063,
+              36.1788863
+            ],
+            [
+              -85.5092929,
+              36.1789144
+            ],
+            [
+              -85.5092876,
+              36.1789492
+            ],
+            [
+              -85.5091561,
+              36.1789361
+            ],
+            [
+              -85.5091534,
+              36.1789123
+            ],
+            [
+              -85.5091316,
+              36.1788893
+            ],
+            [
+              -85.5088607,
+              36.1788612
+            ],
+            [
+              -85.5088369,
+              36.1788733
+            ],
+            [
+              -85.5088235,
+              36.1788993
+            ],
+            [
+              -85.5088074,
+              36.1790682
+            ],
+            [
+              -85.5088258,
+              36.1790907
+            ],
+            [
+              -85.5091427,
+              36.1791201
+            ],
+            [
+              -85.5091481,
+              36.1791526
+            ],
+            [
+              -85.5091906,
+              36.1791664
+            ],
+            [
+              -85.5092419,
+              36.1791677
+            ],
+            [
+              -85.50925,
+              36.1791981
+            ],
+            [
+              -85.5092634,
+              36.1792197
+            ],
+            [
+              -85.5093009,
+              36.1792349
+            ],
+            [
+              -85.5103171,
+              36.1793202
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/293094871",
+      "properties": {
+        "@id": "way/293094871",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "80",
+        "addr:postcode": "38501",
+        "addr:street": "West 8th Street",
+        "building": "dormitory",
+        "name": "Matthews Hall",
+        "operator": "Tennessee Technological University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.505159,
+              36.1726261
+            ],
+            [
+              -85.5049953,
+              36.1726127
+            ],
+            [
+              -85.5049712,
+              36.172806
+            ],
+            [
+              -85.5047871,
+              36.172791
+            ],
+            [
+              -85.5046586,
+              36.1727811
+            ],
+            [
+              -85.5046344,
+              36.1727792
+            ],
+            [
+              -85.5046314,
+              36.172805
+            ],
+            [
+              -85.5046131,
+              36.1728036
+            ],
+            [
+              -85.5046092,
+              36.1728374
+            ],
+            [
+              -85.5046061,
+              36.1728615
+            ],
+            [
+              -85.5046256,
+              36.1728631
+            ],
+            [
+              -85.5046216,
+              36.1728953
+            ],
+            [
+              -85.5051203,
+              36.1729359
+            ],
+            [
+              -85.505159,
+              36.1726261
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/547079663",
+      "properties": {
+        "@id": "way/547079663",
+        "building": "university",
+        "name": "Bryan Fine Arts"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.504898,
+              36.1779677
+            ],
+            [
+              -85.5048379,
+              36.1777864
+            ],
+            [
+              -85.5049142,
+              36.1777699
+            ],
+            [
+              -85.5048997,
+              36.1777262
+            ],
+            [
+              -85.5050655,
+              36.1776904
+            ],
+            [
+              -85.5049964,
+              36.1774821
+            ],
+            [
+              -85.5048373,
+              36.1775165
+            ],
+            [
+              -85.5048189,
+              36.1774611
+            ],
+            [
+              -85.5047538,
+              36.1774751
+            ],
+            [
+              -85.5047004,
+              36.1773141
+            ],
+            [
+              -85.5044258,
+              36.1773734
+            ],
+            [
+              -85.5044777,
+              36.1775299
+            ],
+            [
+              -85.5044246,
+              36.1775413
+            ],
+            [
+              -85.5044516,
+              36.1776225
+            ],
+            [
+              -85.5044306,
+              36.1776263
+            ],
+            [
+              -85.5044076,
+              36.1776304
+            ],
+            [
+              -85.5044648,
+              36.1778063
+            ],
+            [
+              -85.5044969,
+              36.1777987
+            ],
+            [
+              -85.5045191,
+              36.1778656
+            ],
+            [
+              -85.5045824,
+              36.1778519
+            ],
+            [
+              -85.5046393,
+              36.1780236
+            ],
+            [
+              -85.5047386,
+              36.1780127
+            ],
+            [
+              -85.5048536,
+              36.1779876
+            ],
+            [
+              -85.504898,
+              36.1779677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649426",
+      "properties": {
+        "@id": "way/550649426",
+        "amenity": "shelter",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5122182,
+              36.1777228
+            ],
+            [
+              -85.5122433,
+              36.1774848
+            ],
+            [
+              -85.512113,
+              36.1774759
+            ],
+            [
+              -85.5120879,
+              36.1777138
+            ],
+            [
+              -85.5122182,
+              36.1777228
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649438",
+      "properties": {
+        "@id": "way/550649438",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5114743,
+              36.1756275
+            ],
+            [
+              -85.5114679,
+              36.175673
+            ],
+            [
+              -85.5114133,
+              36.175668
+            ],
+            [
+              -85.5114029,
+              36.1757415
+            ],
+            [
+              -85.5114521,
+              36.1757461
+            ],
+            [
+              -85.5114445,
+              36.1757998
+            ],
+            [
+              -85.5114027,
+              36.1757959
+            ],
+            [
+              -85.5113925,
+              36.1758684
+            ],
+            [
+              -85.511429,
+              36.1758718
+            ],
+            [
+              -85.511423,
+              36.1759146
+            ],
+            [
+              -85.511541,
+              36.1759255
+            ],
+            [
+              -85.5115816,
+              36.1756373
+            ],
+            [
+              -85.5114743,
+              36.1756275
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649439",
+      "properties": {
+        "@id": "way/550649439",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5120391,
+              36.1755884
+            ],
+            [
+              -85.5119828,
+              36.1755831
+            ],
+            [
+              -85.5119892,
+              36.175539
+            ],
+            [
+              -85.511898,
+              36.1755304
+            ],
+            [
+              -85.5118923,
+              36.1755701
+            ],
+            [
+              -85.5118258,
+              36.1755638
+            ],
+            [
+              -85.5118307,
+              36.1755301
+            ],
+            [
+              -85.5117409,
+              36.1755217
+            ],
+            [
+              -85.5117366,
+              36.1755511
+            ],
+            [
+              -85.5116835,
+              36.1755461
+            ],
+            [
+              -85.5116698,
+              36.1756414
+            ],
+            [
+              -85.5120266,
+              36.175675
+            ],
+            [
+              -85.5120391,
+              36.1755884
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649440",
+      "properties": {
+        "@id": "way/550649440",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5115976,
+              36.1760344
+            ],
+            [
+              -85.5116538,
+              36.1760409
+            ],
+            [
+              -85.5116459,
+              36.1760794
+            ],
+            [
+              -85.5117367,
+              36.17609
+            ],
+            [
+              -85.5117438,
+              36.1760559
+            ],
+            [
+              -85.5118101,
+              36.1760635
+            ],
+            [
+              -85.5118041,
+              36.1760971
+            ],
+            [
+              -85.5118935,
+              36.1761075
+            ],
+            [
+              -85.5118988,
+              36.1760782
+            ],
+            [
+              -85.5119517,
+              36.1760843
+            ],
+            [
+              -85.5119686,
+              36.1759894
+            ],
+            [
+              -85.511613,
+              36.1759481
+            ],
+            [
+              -85.5115976,
+              36.1760344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649441",
+      "properties": {
+        "@id": "way/550649441",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5123377,
+              36.175633
+            ],
+            [
+              -85.5123801,
+              36.1756026
+            ],
+            [
+              -85.5124166,
+              36.1756359
+            ],
+            [
+              -85.5124853,
+              36.1755867
+            ],
+            [
+              -85.5124524,
+              36.1755568
+            ],
+            [
+              -85.5125025,
+              36.175521
+            ],
+            [
+              -85.5125304,
+              36.1755464
+            ],
+            [
+              -85.512598,
+              36.175498
+            ],
+            [
+              -85.5125736,
+              36.1754758
+            ],
+            [
+              -85.5126136,
+              36.1754471
+            ],
+            [
+              -85.5125348,
+              36.1753754
+            ],
+            [
+              -85.512266,
+              36.1755678
+            ],
+            [
+              -85.5123377,
+              36.175633
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649442",
+      "properties": {
+        "@id": "way/550649442",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5121153,
+              36.175219
+            ],
+            [
+              -85.5121089,
+              36.1752645
+            ],
+            [
+              -85.5120542,
+              36.1752595
+            ],
+            [
+              -85.5120438,
+              36.1753331
+            ],
+            [
+              -85.512093,
+              36.1753376
+            ],
+            [
+              -85.5120854,
+              36.1753913
+            ],
+            [
+              -85.5120437,
+              36.1753874
+            ],
+            [
+              -85.5120334,
+              36.1754599
+            ],
+            [
+              -85.5120699,
+              36.1754633
+            ],
+            [
+              -85.5120639,
+              36.1755062
+            ],
+            [
+              -85.512182,
+              36.175517
+            ],
+            [
+              -85.5122226,
+              36.1752289
+            ],
+            [
+              -85.5121153,
+              36.175219
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649443",
+      "properties": {
+        "@id": "way/550649443",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5127435,
+              36.1752783
+            ],
+            [
+              -85.5127482,
+              36.1752326
+            ],
+            [
+              -85.5128031,
+              36.1752363
+            ],
+            [
+              -85.5128107,
+              36.1751625
+            ],
+            [
+              -85.5127614,
+              36.1751592
+            ],
+            [
+              -85.5127669,
+              36.1751053
+            ],
+            [
+              -85.5128088,
+              36.1751082
+            ],
+            [
+              -85.5128163,
+              36.1750354
+            ],
+            [
+              -85.5127797,
+              36.175033
+            ],
+            [
+              -85.512782,
+              36.1750021
+            ],
+            [
+              -85.5126646,
+              36.1749933
+            ],
+            [
+              -85.5126359,
+              36.175271
+            ],
+            [
+              -85.5127435,
+              36.1752783
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649444",
+      "properties": {
+        "@id": "way/550649444",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5122038,
+              36.1746301
+            ],
+            [
+              -85.5121974,
+              36.1746756
+            ],
+            [
+              -85.5121427,
+              36.1746706
+            ],
+            [
+              -85.5121323,
+              36.1747442
+            ],
+            [
+              -85.5121815,
+              36.1747487
+            ],
+            [
+              -85.5121739,
+              36.1748024
+            ],
+            [
+              -85.5121322,
+              36.1747985
+            ],
+            [
+              -85.512122,
+              36.174871
+            ],
+            [
+              -85.5121585,
+              36.1748744
+            ],
+            [
+              -85.5121524,
+              36.1749172
+            ],
+            [
+              -85.5122705,
+              36.1749281
+            ],
+            [
+              -85.5123111,
+              36.17464
+            ],
+            [
+              -85.5122038,
+              36.1746301
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649445",
+      "properties": {
+        "@id": "way/550649445",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5126996,
+              36.1748135
+            ],
+            [
+              -85.5126668,
+              36.1747761
+            ],
+            [
+              -85.5127117,
+              36.1747505
+            ],
+            [
+              -85.5126587,
+              36.17469
+            ],
+            [
+              -85.5126183,
+              36.1747131
+            ],
+            [
+              -85.5125796,
+              36.174669
+            ],
+            [
+              -85.5126139,
+              36.1746494
+            ],
+            [
+              -85.5125617,
+              36.1745898
+            ],
+            [
+              -85.5125317,
+              36.174607
+            ],
+            [
+              -85.5125008,
+              36.1745718
+            ],
+            [
+              -85.5124039,
+              36.1746272
+            ],
+            [
+              -85.5126115,
+              36.1748639
+            ],
+            [
+              -85.5126996,
+              36.1748135
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649446",
+      "properties": {
+        "@id": "way/550649446",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5118365,
+              36.1745169
+            ],
+            [
+              -85.5118927,
+              36.1745227
+            ],
+            [
+              -85.5118858,
+              36.1745667
+            ],
+            [
+              -85.5119768,
+              36.174576
+            ],
+            [
+              -85.511983,
+              36.1745364
+            ],
+            [
+              -85.5120495,
+              36.1745432
+            ],
+            [
+              -85.5120442,
+              36.1745769
+            ],
+            [
+              -85.5121338,
+              36.1745861
+            ],
+            [
+              -85.5121385,
+              36.1745566
+            ],
+            [
+              -85.5121915,
+              36.1745621
+            ],
+            [
+              -85.5122064,
+              36.1744669
+            ],
+            [
+              -85.51185,
+              36.1744304
+            ],
+            [
+              -85.5118365,
+              36.1745169
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649447",
+      "properties": {
+        "@id": "way/550649447",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5117062,
+              36.1741083
+            ],
+            [
+              -85.5116998,
+              36.1741538
+            ],
+            [
+              -85.5116452,
+              36.1741488
+            ],
+            [
+              -85.5116348,
+              36.1742224
+            ],
+            [
+              -85.511684,
+              36.1742269
+            ],
+            [
+              -85.5116764,
+              36.1742806
+            ],
+            [
+              -85.5116346,
+              36.1742767
+            ],
+            [
+              -85.5116244,
+              36.1743492
+            ],
+            [
+              -85.5116609,
+              36.1743526
+            ],
+            [
+              -85.5116549,
+              36.1743954
+            ],
+            [
+              -85.5117729,
+              36.1744063
+            ],
+            [
+              -85.5118135,
+              36.1741182
+            ],
+            [
+              -85.5117062,
+              36.1741083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649448",
+      "properties": {
+        "@id": "way/550649448",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.512271,
+              36.174065
+            ],
+            [
+              -85.5122146,
+              36.1740601
+            ],
+            [
+              -85.5122205,
+              36.174016
+            ],
+            [
+              -85.5121293,
+              36.174008
+            ],
+            [
+              -85.512124,
+              36.1740477
+            ],
+            [
+              -85.5120574,
+              36.1740419
+            ],
+            [
+              -85.5120619,
+              36.1740082
+            ],
+            [
+              -85.5119721,
+              36.1740004
+            ],
+            [
+              -85.5119681,
+              36.1740299
+            ],
+            [
+              -85.511915,
+              36.1740253
+            ],
+            [
+              -85.5119023,
+              36.1741206
+            ],
+            [
+              -85.5122595,
+              36.1741517
+            ],
+            [
+              -85.512271,
+              36.174065
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649449",
+      "properties": {
+        "@id": "way/550649449",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5124047,
+              36.1744753
+            ],
+            [
+              -85.5124109,
+              36.1744298
+            ],
+            [
+              -85.5124656,
+              36.1744346
+            ],
+            [
+              -85.5124757,
+              36.174361
+            ],
+            [
+              -85.5124265,
+              36.1743566
+            ],
+            [
+              -85.5124338,
+              36.1743029
+            ],
+            [
+              -85.5124756,
+              36.1743066
+            ],
+            [
+              -85.5124855,
+              36.1742341
+            ],
+            [
+              -85.512449,
+              36.1742309
+            ],
+            [
+              -85.5124549,
+              36.174188
+            ],
+            [
+              -85.5123368,
+              36.1741775
+            ],
+            [
+              -85.5122974,
+              36.1744657
+            ],
+            [
+              -85.5124047,
+              36.1744753
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649450",
+      "properties": {
+        "@id": "way/550649450",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.512987,
+              36.1742479
+            ],
+            [
+              -85.5129806,
+              36.174288
+            ],
+            [
+              -85.5129259,
+              36.174283
+            ],
+            [
+              -85.5129155,
+              36.1743566
+            ],
+            [
+              -85.5129647,
+              36.1743611
+            ],
+            [
+              -85.5129571,
+              36.1744148
+            ],
+            [
+              -85.5129154,
+              36.174411
+            ],
+            [
+              -85.5129052,
+              36.1744835
+            ],
+            [
+              -85.5129417,
+              36.1744868
+            ],
+            [
+              -85.5129356,
+              36.1745297
+            ],
+            [
+              -85.5130537,
+              36.1745405
+            ],
+            [
+              -85.5130943,
+              36.1742567
+            ],
+            [
+              -85.512987,
+              36.1742479
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/550649451",
+      "properties": {
+        "@id": "way/550649451",
+        "building": "apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.512759,
+              36.1757614
+            ],
+            [
+              -85.5127526,
+              36.1758069
+            ],
+            [
+              -85.5126979,
+              36.1758018
+            ],
+            [
+              -85.5126876,
+              36.1758754
+            ],
+            [
+              -85.5127367,
+              36.1758799
+            ],
+            [
+              -85.5127292,
+              36.1759336
+            ],
+            [
+              -85.5126874,
+              36.1759298
+            ],
+            [
+              -85.5126772,
+              36.1760023
+            ],
+            [
+              -85.5127137,
+              36.1760057
+            ],
+            [
+              -85.5127076,
+              36.1760485
+            ],
+            [
+              -85.5128257,
+              36.1760594
+            ],
+            [
+              -85.5128663,
+              36.1757712
+            ],
+            [
+              -85.512759,
+              36.1757614
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/574776487",
+      "properties": {
+        "@id": "way/574776487",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5165743,
+              36.1767182
+            ],
+            [
+              -85.5165336,
+              36.1766478
+            ],
+            [
+              -85.5162345,
+              36.1767606
+            ],
+            [
+              -85.5162752,
+              36.176831
+            ],
+            [
+              -85.5165743,
+              36.1767182
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/699965393",
+      "properties": {
+        "@id": "way/699965393",
+        "building": "university",
+        "name": "Laboratory Sciences Building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.507583,
+              36.1748036
+            ],
+            [
+              -85.5076504,
+              36.1744188
+            ],
+            [
+              -85.5076085,
+              36.1744149
+            ],
+            [
+              -85.507615,
+              36.1743685
+            ],
+            [
+              -85.507624,
+              36.1743053
+            ],
+            [
+              -85.5076626,
+              36.1743088
+            ],
+            [
+              -85.5077227,
+              36.1738849
+            ],
+            [
+              -85.5076917,
+              36.173882
+            ],
+            [
+              -85.5076987,
+              36.173832
+            ],
+            [
+              -85.5077051,
+              36.1737871
+            ],
+            [
+              -85.5077445,
+              36.1737907
+            ],
+            [
+              -85.5077982,
+              36.1734108
+            ],
+            [
+              -85.507741,
+              36.1734056
+            ],
+            [
+              -85.5076006,
+              36.1733927
+            ],
+            [
+              -85.507579,
+              36.1735453
+            ],
+            [
+              -85.5071818,
+              36.1735087
+            ],
+            [
+              -85.507166,
+              36.1736208
+            ],
+            [
+              -85.5071655,
+              36.1736245
+            ],
+            [
+              -85.5071547,
+              36.1737032
+            ],
+            [
+              -85.5071505,
+              36.1737465
+            ],
+            [
+              -85.5074504,
+              36.1737738
+            ],
+            [
+              -85.5074452,
+              36.1737997
+            ],
+            [
+              -85.5074359,
+              36.1738692
+            ],
+            [
+              -85.5074068,
+              36.1740855
+            ],
+            [
+              -85.5073789,
+              36.1742927
+            ],
+            [
+              -85.5073715,
+              36.174348
+            ],
+            [
+              -85.5073605,
+              36.1744094
+            ],
+            [
+              -85.5071456,
+              36.1743923
+            ],
+            [
+              -85.5070505,
+              36.174382
+            ],
+            [
+              -85.5070402,
+              36.1744565
+            ],
+            [
+              -85.5070156,
+              36.1746309
+            ],
+            [
+              -85.507405,
+              36.1746668
+            ],
+            [
+              -85.5073906,
+              36.1747687
+            ],
+            [
+              -85.507381,
+              36.1747911
+            ],
+            [
+              -85.507583,
+              36.1748036
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/699965394",
+      "properties": {
+        "@id": "way/699965394",
+        "building": "university",
+        "name": "Stonecipher Lecture Hall"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5070739,
+              36.1735991
+            ],
+            [
+              -85.507116,
+              36.1733336
+            ],
+            [
+              -85.5069947,
+              36.1733198
+            ],
+            [
+              -85.5065996,
+              36.1732822
+            ],
+            [
+              -85.5065604,
+              36.1735482
+            ],
+            [
+              -85.5066989,
+              36.1735618
+            ],
+            [
+              -85.5066969,
+              36.173572
+            ],
+            [
+              -85.5066789,
+              36.1736947
+            ],
+            [
+              -85.5068852,
+              36.1737149
+            ],
+            [
+              -85.5069938,
+              36.1737255
+            ],
+            [
+              -85.5070114,
+              36.1736077
+            ],
+            [
+              -85.5070136,
+              36.1735932
+            ],
+            [
+              -85.5070739,
+              36.1735991
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1132085021",
+      "properties": {
+        "@id": "way/1132085021",
+        "building": "university",
+        "building:levels": "3",
+        "name": "Ashraf Islam Engineering Building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5079746,
+              36.1751379
+            ],
+            [
+              -85.507912,
+              36.1755714
+            ],
+            [
+              -85.5078648,
+              36.1758986
+            ],
+            [
+              -85.508215,
+              36.1759315
+            ],
+            [
+              -85.5082427,
+              36.1757393
+            ],
+            [
+              -85.5082541,
+              36.1756604
+            ],
+            [
+              -85.5082821,
+              36.1754662
+            ],
+            [
+              -85.5082935,
+              36.1753874
+            ],
+            [
+              -85.5083701,
+              36.1753946
+            ],
+            [
+              -85.5083629,
+              36.1754445
+            ],
+            [
+              -85.5088216,
+              36.1754877
+            ],
+            [
+              -85.5088538,
+              36.1752646
+            ],
+            [
+              -85.5088084,
+              36.1752603
+            ],
+            [
+              -85.5088001,
+              36.1752595
+            ],
+            [
+              -85.5084102,
+              36.1752228
+            ],
+            [
+              -85.5084022,
+              36.1752779
+            ],
+            [
+              -85.5083044,
+              36.1752687
+            ],
+            [
+              -85.5083186,
+              36.1751702
+            ],
+            [
+              -85.5079746,
+              36.1751379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1563343947",
+      "properties": {
+        "@id": "way/1563343947",
+        "addr:city": "Cookeville",
+        "addr:housenumber": "242",
+        "addr:postcode": "38501",
+        "addr:state": "TN",
+        "addr:street": "East 10th Street",
+        "building": "university",
+        "name": "Foundation Hall/Campus Police",
+        "operator": "Tennessee Technology University"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5003072,
+              36.1764655
+            ],
+            [
+              -85.500327,
+              36.1761876
+            ],
+            [
+              -85.5002402,
+              36.1761863
+            ],
+            [
+              -85.5002478,
+              36.1760757
+            ],
+            [
+              -85.5002204,
+              36.1760646
+            ],
+            [
+              -85.5002204,
+              36.1759859
+            ],
+            [
+              -85.5002585,
+              36.1759847
+            ],
+            [
+              -85.50026,
+              36.1760216
+            ],
+            [
+              -85.5003682,
+              36.1760203
+            ],
+            [
+              -85.5003697,
+              36.1762441
+            ],
+            [
+              -85.5006881,
+              36.1762503
+            ],
+            [
+              -85.5007353,
+              36.1762441
+            ],
+            [
+              -85.5007475,
+              36.176099
+            ],
+            [
+              -85.5008694,
+              36.1761052
+            ],
+            [
+              -85.500877,
+              36.1759822
+            ],
+            [
+              -85.5007293,
+              36.1759761
+            ],
+            [
+              -85.5006957,
+              36.1759625
+            ],
+            [
+              -85.5005982,
+              36.1759539
+            ],
+            [
+              -85.5005952,
+              36.1758432
+            ],
+            [
+              -85.5002417,
+              36.1758359
+            ],
+            [
+              -85.5002417,
+              36.1757977
+            ],
+            [
+              -85.5003468,
+              36.1758002
+            ],
+            [
+              -85.5003941,
+              36.175799
+            ],
+            [
+              -85.5003986,
+              36.1757535
+            ],
+            [
+              -85.5004596,
+              36.1757522
+            ],
+            [
+              -85.5004596,
+              36.1756846
+            ],
+            [
+              -85.5004002,
+              36.1756846
+            ],
+            [
+              -85.5004078,
+              36.175596
+            ],
+            [
+              -85.4998806,
+              36.1755813
+            ],
+            [
+              -85.4998746,
+              36.1756686
+            ],
+            [
+              -85.499838,
+              36.1756661
+            ],
+            [
+              -85.499838,
+              36.1757375
+            ],
+            [
+              -85.4998669,
+              36.1757375
+            ],
+            [
+              -85.4998608,
+              36.1757891
+            ],
+            [
+              -85.5000543,
+              36.1757928
+            ],
+            [
+              -85.5000543,
+              36.1758285
+            ],
+            [
+              -85.4996536,
+              36.1758223
+            ],
+            [
+              -85.4996582,
+              36.1758912
+            ],
+            [
+              -85.499614,
+              36.1758887
+            ],
+            [
+              -85.4996064,
+              36.1759305
+            ],
+            [
+              -85.4995516,
+              36.1759293
+            ],
+            [
+              -85.4994967,
+              36.1759305
+            ],
+            [
+              -85.4994845,
+              36.1760707
+            ],
+            [
+              -85.4995348,
+              36.1760769
+            ],
+            [
+              -85.4998624,
+              36.1760867
+            ],
+            [
+              -85.49987,
+              36.1760068
+            ],
+            [
+              -85.4999888,
+              36.1760142
+            ],
+            [
+              -85.4999858,
+              36.1759859
+            ],
+            [
+              -85.5000117,
+              36.1759847
+            ],
+            [
+              -85.5000056,
+              36.1760658
+            ],
+            [
+              -85.4999782,
+              36.1760634
+            ],
+            [
+              -85.4999797,
+              36.1761777
+            ],
+            [
+              -85.5000178,
+              36.1761827
+            ],
+            [
+              -85.5000056,
+              36.1764569
+            ],
+            [
+              -85.5003072,
+              36.1764655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1574338343",
+      "properties": {
+        "@id": "way/1574338343",
+        "building": "yes",
+        "name": "Tucker Stadium (West)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -85.5069133,
+              36.1780769
+            ],
+            [
+              -85.5066855,
+              36.1780525
+            ],
+            [
+              -85.5066023,
+              36.1785578
+            ],
+            [
+              -85.50683,
+              36.1785822
+            ],
+            [
+              -85.5069133,
+              36.1780769
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

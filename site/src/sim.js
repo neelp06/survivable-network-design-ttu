@@ -64,6 +64,7 @@ export async function initSim(root) {
     <div class="sim-ui bottom">
       <span class="sim-hint" data-hint>Click a cable to cut it · drag to orbit · scroll to zoom</span>
       <button class="sim-btn" data-reset>Restore cables</button>
+      <button class="sim-btn" data-labels>Labels</button>
       <button class="sim-btn" data-cands>Show all candidate links</button>
       <button class="sim-btn" data-hideui title="Hide overlays (H)">Hide overlays</button>
     </div>
@@ -113,6 +114,7 @@ export async function initSim(root) {
   $('[data-hideui]').addEventListener('click', toggleUI);
   addEventListener('keydown', (e) => { if (e.key.toLowerCase() === 'h' && visible) toggleUI(); });
   $('[data-reset]').addEventListener('click', () => { if (state) { state.cut.clear(); refresh(); } });
+  $('[data-labels]').addEventListener('click', (e) => { if (!state) return; state.labelGroup.visible = !state.labelGroup.visible; e.target.classList.toggle('on', state.labelGroup.visible); });
   $('[data-cands]').addEventListener('click', (e) => { if (!state) return; state.showCands = !state.showCands; e.target.classList.toggle('on', state.showCands); state.candGroup.visible = state.showCands; });
 
   async function load(name) {
@@ -129,6 +131,7 @@ export async function initSim(root) {
     const box = new THREE.Box3().setFromPoints(pos); const size = box.getSize(new THREE.Vector3()); const span = Math.max(size.x, size.z, 80);
     const center = box.getCenter(new THREE.Vector3());
     world.position.set(-center.x, 0, -center.z);
+    scene.fog.density = 0.55 / span; camera.far = span * 10; camera.near = span / 1000; camera.updateProjectionMatrix();
 
     // ground
     const ground = new THREE.Mesh(new THREE.CircleGeometry(span * 1.6, 64).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: 0x1f2a22, roughness: 1 }));
@@ -137,11 +140,14 @@ export async function initSim(root) {
     const sh = sun.shadow.camera, ext = span * 1.2; sh.left = -ext; sh.right = ext; sh.top = ext; sh.bottom = -ext; sh.far = span * 6; sh.updateProjectionMatrix();
     sun.position.set(span * 0.8, span * 1.6, span * 0.5); sun.target.position.set(0, 0, 0);
 
+    const labelGroup = new THREE.Group(); world.add(labelGroup);
+    labelGroup.visible = n <= 15;
+    $('[data-labels]').classList.toggle('on', labelGroup.visible);
     // buildings / nodes
     const nodeMats = [], nodeMeshes = [];
     pos.forEach((p, i) => {
       const meta = doc.nodes?.[i];
-      const h = meta?.height ?? span * 0.06 + 6;
+      const h = meta ? (meta.height ?? 12) : span * 0.06 + 6; // 12 m default when OSM has no height
       let geo;
       if (meta?.footprint?.length > 2) {
         const shape = new THREE.Shape(meta.footprint.map(([x, y]) => new THREE.Vector2(x - meta.x, y - meta.y)));
@@ -156,22 +162,23 @@ export async function initSim(root) {
       else if (geo.type === 'BoxGeometry') m.material = [mat, mat, new THREE.MeshStandardMaterial({ color: 0x6f6a66, roughness: 0.9 }), mat, mat, mat];
       m.castShadow = true; m.receiveShadow = true; m.position.copy(p); world.add(m);
       nodeMats.push(mat); nodeMeshes.push(m);
-      const label = makeLabel(meta?.name ?? String(i), span); label.position.set(p.x, h + span * 0.03 + 4, p.z); world.add(label);
+      const ls = doc.nodes ? 14 : span * 0.035 + 3;
+      const label = makeLabel(meta?.name ?? String(i), ls); label.position.set(p.x, h + ls * 0.8 + 2, p.z); labelGroup.add(label);
     });
 
     // candidate links (faint)
     const candGroup = new THREE.Group(); candGroup.visible = false;
     const cg = new LineSegmentsGeometry().setPositions(doc.links.flatMap(([u, v]) => [pos[u].x, 1.5, pos[u].z, pos[v].x, 1.5, pos[v].z]));
-    const lm = new LineMaterial({ color: 0xc9b8ff, linewidth: 3, transparent: true, opacity: 0.75, dashed: true, dashSize: span * 0.02, gapSize: span * 0.012, worldUnits: false });
+    const lm = new LineMaterial({ color: 0xc9b8ff, linewidth: n > 20 ? 1.5 : 3, transparent: true, opacity: 0.75, dashed: true, dashSize: span * 0.02, gapSize: span * 0.012, worldUnits: false });
     lm.resolution.set(root.clientWidth, root.clientHeight);
     const cl = new LineSegments2(cg, lm); cl.computeLineDistances(); candGroup.add(cl); candMat = lm;
     world.add(candGroup);
 
     const cableGroup = new THREE.Group(); world.add(cableGroup);
-    state = { doc, n, pos, span, nodeMats, nodeMeshes, cableGroup, candGroup, showCands: false, cut: new Set(), algo: null, cables: [] };
+    state = { doc, n, pos, span, labelGroup, nodeMats, nodeMeshes, cableGroup, candGroup, showCands: false, cut: new Set(), algo: null, cables: [] };
     $('[data-cands]').classList.remove('on');
 
-    camera.position.set(span * 0.9, span * 0.75, span * 1.1); controls.target.set(0, 0, 0); controls.update();
+    const zf = doc.nodes ? 0.5 : 1; camera.position.set(span * 0.9 * zf, span * 0.75 * zf, span * 1.1 * zf); controls.target.set(0, 0, 0); controls.update();
     controls.autoRotate = true;
     $('[data-note]').textContent = doc.nodes ? `Positions: ${doc.nodes.length} buildings, real coordinates.` : 'Schematic layout: this test file has no coordinates, so nodes are placed on a circle.';
 
@@ -192,7 +199,7 @@ export async function initSim(root) {
       const color = ALGOS.find((a) => a.key === key).color;
       r.chosen.forEach(([u, v], i) => {
         const a = s.pos[u].clone().setY(3), b = s.pos[v].clone().setY(3);
-        const len = a.distanceTo(b), rad = s.span * 0.006 + 0.6;
+        const len = a.distanceTo(b), rad = s.doc.nodes ? 1.6 : s.span * 0.006 + 0.6;
         const geo = new THREE.CylinderGeometry(rad, rad, len, 10, 1); geo.rotateX(Math.PI / 2);
         const mat = new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.9 });
         const mesh = new THREE.Mesh(geo, mat); mesh.position.copy(a).lerp(b, 0.5); mesh.lookAt(b);
@@ -286,7 +293,7 @@ function makeLabel(text, span) {
   ctx.fillStyle = '#f1eef8'; ctx.textBaseline = 'middle'; ctx.fillText(text, 12, c.height / 2);
   const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
   const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthWrite: false, transparent: true }));
-  const k = (span * 0.035 + 3) / c.height; sp.scale.set(c.width * k, c.height * k, 1);
+  const k = span / c.height; sp.scale.set(c.width * k, c.height * k, 1);
   return sp;
 }
 

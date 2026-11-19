@@ -28,6 +28,7 @@ def main():
     ap.add_argument('csv')
     ap.add_argument('out')
     ap.add_argument('--only', help='comma-separated building names to keep')
+    ap.add_argument('--exclude', help='comma-separated building names to drop')
     ap.add_argument('--cost', choices=['metres', 'usd'], default='metres',
                     help='link cost: straight-line metres, or estimated dollars (see docs/cost_model.md)')
     ap.add_argument('--scenario', choices=list(SCENARIOS), default='median')
@@ -41,6 +42,11 @@ def main():
         if missing:
             raise SystemExit(f'not in CSV: {sorted(missing)}')
         rows = [r for r in rows if r['name'] in keep]
+    if a.exclude:
+        drop = {s.strip() for s in a.exclude.split(',')}
+        rows = [r for r in rows if r['name'] not in drop]
+    seen = set()
+    rows = [r for r in rows if not (r['name'] in seen or seen.add(r['name']))]  # keep first of duplicate names
     lat0 = sum(float(r['lat']) for r in rows) / len(rows)
     lon0 = sum(float(r['lon']) for r in rows) / len(rows)
     nodes = []

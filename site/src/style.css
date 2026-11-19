@@ -242,3 +242,4 @@ cite { display: block; margin-top: 12px; font: .8em var(--font-m); color: var(--
 .sim-ui.panel.min [data-panel] > :not(.sim-algo) { display: none; }
 .sim-ui.panel.min .sim-algo { margin: 0; font-size: 13px; }
 .sim-slot.ui-hidden .sim-ui:not(.bottom), .sim-slot.ui-hidden .sim-note, .sim-slot.ui-hidden .sim-ui.bottom > :not([data-hideui]) { display: none; }
+.sim-src { font-size: .78em; color: var(--muted); } .sim-src a { color: var(--purple-soft); }
