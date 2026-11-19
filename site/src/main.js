@@ -163,6 +163,7 @@ if (!reduced) {
   const all = [...tree.map((e) => [...e, 'tree']), ...repair.map((e) => [...e, 'repair'])];
   const lines = all.map(([a, b, k]) => el('line', { x1: N[a][0], y1: N[a][1], x2: N[b][0], y2: N[b][1], stroke: k === 'tree' ? '#ff5c7a' : '#ffc72c', 'data-k': k }, svg));
   N.forEach(([x, y]) => el('circle', { cx: x, cy: y, r: 13 }, svg));
+  el('text', { x: 310, y: 252, 'text-anchor': 'end', fill: '#6b6488', 'font-family': 'JetBrains Mono', 'font-size': 10 }, svg).textContent = 'illustration only';
   const label = el('text', { x: 160, y: 140, 'text-anchor': 'middle', fill: '#a69fc0', 'font-family': 'JetBrains Mono', 'font-size': 12 }, svg);
   const tl = gsap.timeline({ paused: true, repeat: reduced ? 0 : -1, repeatDelay: 1.5 });
   const treeL = lines.filter((l) => l.dataset.k === 'tree'), repL = lines.filter((l) => l.dataset.k === 'repair');

@@ -199,3 +199,8 @@ cite { display: block; margin-top: 12px; font: .8em var(--font-m); color: var(--
   .js .reveal { opacity: 1 !important; transform: none !important; }
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+.facts li.note::before { display: none; }
+.facts li.note { padding-left: 0; }
+.code { white-space: pre; }
+.code, code { font-variant-ligatures: none; }
+.code { font-size: .78em; line-height: 1.55; max-height: 78vh; overflow: auto; }

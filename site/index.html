@@ -95,8 +95,8 @@
           </article>
           <article class="card reveal">
             <span class="tag">Approximation</span>
-            <h3>Tree + repair is within 3×</h3>
-            <p>A spanning tree plus 2-approximate augmentation costs at most 3× the optimum. This inspired our greedy method.</p>
+            <h3>A close relative is within 3×</h3>
+            <p>A spanning tree plus 2-approximate augmentation costs at most 3× the optimum. Our greedy rule is similar, but we found no such proof for our exact rule.</p>
             <cite>[2] [4] [6]</cite>
           </article>
         </div>
@@ -108,10 +108,11 @@
       <div class="slide-inner">
         <p class="kicker reveal">03 — Hypothesis</p>
         <h2 class="reveal">Our prediction, <span class="hl">before</span> any results.</h2>
+        <p class="reveal"><span class="todo">Draft: the team needs to confirm these predictions</span></p>
         <div class="grid3 predictions">
           <article class="card pred bf reveal"><span class="algo-badge">Brute Force</span><p>Optimal every time, but impractical beyond <b>~8–9 sites</b>.</p></article>
           <article class="card pred ga reveal"><span class="algo-badge">Genetic</span><p>Near-optimal on larger networks, <b>slower than greedy</b>, and its cost varies from seed to seed.</p></article>
-          <article class="card pred gr reveal"><span class="algo-badge">Greedy</span><p>Fastest at every size, <b>within 3× optimal</b>, usually much closer.</p></article>
+          <article class="card pred gr reveal"><span class="algo-badge">Greedy</span><p>Fastest at every size, with cost above optimal but <b>close to it</b>.</p></article>
         </div>
       </div>
     </section>
@@ -123,19 +124,40 @@
           <p class="kicker reveal">04 — Method · Brute Force <span class="owner">Nick</span></p>
           <h2 class="reveal">Check <span class="hl">every</span> subset of links.</h2>
           <ul class="facts reveal">
-            <li><b>Examines</b> all 2<sup>m</sup> subsets of the m = n(n−1)/2 possible links.</li>
-            <li><b>Evaluates</b> each subset: is it connected and bridge-free? If so, keep the cheapest.</li>
-            <li><b>Optimal?</b> Yes. Nothing is skipped, so it is our exact reference answer.</li>
-            <li><b>Time</b> O(2<sup>m</sup> · (n + m))</li>
+            <li><b>Examines</b> every subset of the possible links (a bitmask over all <i>E</i> links).</li>
+            <li><b>Evaluates</b> each subset with <code>isConnected</code> and keeps the cheapest valid one.</li>
+            <li><b>Optimal?</b> Yes, within what it checks: nothing is skipped.</li>
+            <li><b>Time</b> <span class="todo">TBD: confirm with Nick</span></li>
+            <li class="note"><span class="todo">In progress: the current code keeps subsets of exactly V−1 edges (a spanning tree). The bridge check for survivability is not in yet.</span></li>
           </ul>
         </div>
-        <pre class="code reveal"><span class="c">// exhaustive search</span>
-best ← ∞
-<b>for</b> mask <b>in</b> 0 … 2<sup>m</sup>−1:
-    S ← links selected by mask
-    <b>if</b> connected(S) <b>and</b> bridges(S) = ∅:
-        best ← min(best, cost(S))
-<b>return</b> best</pre>
+        <pre class="code reveal"><span class="c">// src/brute_force/brute_force.cpp (excerpt, unchanged)</span>
+<b>for</b> (int mask = 0; mask &lt; (1 &lt;&lt; E); mask++)
+{
+    vector&lt;int&gt; selected;
+    count = 0;
+    totalWeight = 0;
+    <b>for</b> (int i = 0; i &lt; E; i++)
+    {
+        <b>if</b> (mask &amp; (1 &lt;&lt; i))
+        {
+            selected.push_back(i);
+            count++;
+            totalWeight += edges[i].weight;
+        }
+    }
+    <span class="c">// A spanning tree must contain exactly V-1 edges</span>
+    <b>if</b> (count != V - 1)
+        <b>continue</b>;
+    <b>if</b> (isConnected(V, edges, selected))
+    {
+        <b>if</b> (totalWeight &lt; minWeight)
+        {
+            minWeight = totalWeight;
+            bestMST = selected;
+        }
+    }
+}</pre>
       </div>
     </section>
 
@@ -143,7 +165,7 @@ best ← ∞
     <section class="slide algo" id="genetic" data-title="Genetic" data-accent="ga">
       <div class="slide-inner split">
         <div>
-          <p class="kicker reveal">05 — Method · Genetic Algorithm <span class="owner">Neel</span></p>
+          <p class="kicker reveal">05 — Method · Genetic Algorithm <span class="owner">Neel</span> <span class="todo">Planned design from README; code not written yet</span></p>
           <h2 class="reveal">Evolve networks toward <span class="hl">cheap and survivable</span>.</h2>
           <ul class="facts reveal">
             <li><b>Chromosome</b> One bit per possible link (1 = built).</li>
@@ -159,7 +181,7 @@ best ← ∞
           <div class="chromo-row" data-label="Parent A"></div>
           <div class="chromo-row" data-label="Parent B"></div>
           <div class="chromo-row child" data-label="Child"></div>
-          <p class="chromo-cap">Uniform crossover: each link bit comes from either parent. A gold outline marks a mutated bit.</p>
+          <p class="chromo-cap">Illustration only, not output from our code. Uniform crossover: each link bit comes from either parent. A gold outline marks a mutated bit.</p>
         </div>
       </div>
     </section>
@@ -180,7 +202,7 @@ best ← ∞
             <li><b>Time</b> <span class="todo">TBD, confirm with implementation</span></li>
           </ul>
         </div>
-        <svg class="card greedy-viz reveal" id="greedyViz" viewBox="0 0 320 260" aria-label="Greedy build-and-repair illustration"></svg>
+        <svg class="card greedy-viz reveal" data-note="illustration" id="greedyViz" viewBox="0 0 320 260" aria-label="Greedy build-and-repair illustration"></svg>
       </div>
     </section>
 
@@ -196,7 +218,7 @@ best ← ∞
           <div class="stat reveal"><b>30</b><span>GA seeds per network</span></div>
         </div>
         <dl class="spec two reveal">
-          <div><dt>Language</dt><dd>C++17 (-O2); Python for generation and plots.</dd></div>
+          <div><dt>Language</dt><dd>C++17 (-O2, per Makefile). Python for generation and plots (planned).</dd></div>
           <div><dt>Hardware</dt><dd class="todo">TBD: CPU, RAM, OS</dd></div>
           <div><dt>Inputs</dt><dd>Random points with straight-line distance as cost. Every algorithm gets the identical networks.</dd></div>
           <div><dt>Metrics</dt><dd>Runtime and cost gap are reported <b>separately</b>. The gap is measured against brute force for small n and the MST floor for large n.</dd></div>
@@ -255,7 +277,7 @@ best ← ∞
           <article class="card reveal"><span class="tag">Takeaway 3</span><p class="todo">Fill in from results</p></article>
         </div>
         <div class="grid2 tight">
-          <div class="card reveal"><span class="tag warn">Limitations</span><p>Beyond ~9 sites we only have the MST lower bound, which may make the heuristics look worse than they are. Straight-line distance stands in for real trenching cost.</p></div>
+          <div class="card reveal"><span class="tag warn">Limitations</span><p>Beyond ~9 sites we only have the MST lower bound, which may make the heuristics look worse than they are.</p></div>
           <div class="card reveal"><span class="tag">Next step</span><p class="todo">Fill in</p></div>
         </div>
       </div>
