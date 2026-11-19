@@ -28,7 +28,7 @@ OUT = os.path.join(ROOT, 'site', 'public', 'data')
 SCALE = 100  # costs kept to 2 decimal places
 
 SOLVERS = {
-    'brute_force': 'src/brute_force/brute_force.cpp',
+    'brute_force': 'src/brute_force/fault_tolerant_BF.cpp',  # survivable version; brute_force.cpp is the earlier MST version
     'genetic': 'src/genetic/genetic.cpp',
     'greedy': 'src/greedy/greedy.cpp',
 }
@@ -50,10 +50,12 @@ def compile_solver(key):
 def parse_brute(out):
     links = [(int(u) - 1, int(v) - 1) for u, v, _ in re.findall(r'^(\d+) -- (\d+) \(Weight: (-?\d+)\)', out, re.M)]
     m = re.search(r'Minimum Total Weight: (-?\d+)', out)
-    t = re.search(r'Time in Microseconds: ([\d.eE+-]+)', out)
+    t_us = re.search(r'Time in Microseconds: ([\d.eE+-]+)', out)
+    t_s = re.search(r'Time in Seconds: ([\d.eE+-]+)', out)
     if not m:
         return None
-    return {'chosen': links, 'reported_cost': int(m.group(1)) / SCALE, 'time_us': float(t.group(1)) if t else None}
+    time_us = float(t_us.group(1)) if t_us else float(t_s.group(1)) * 1e6 if t_s else None
+    return {'chosen': links, 'reported_cost': int(m.group(1)) / SCALE, 'time_us': time_us}
 
 
 def parse_greedy(out):

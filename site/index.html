@@ -125,20 +125,21 @@
           <h2 class="reveal">Check <span class="hl">every</span> subset of links.</h2>
           <ul class="facts reveal">
             <li><b>Examines</b> every subset of the possible links (a bitmask over all <i>E</i> links).</li>
-            <li><b>Evaluates</b> each subset with <code>isConnected</code> and keeps the cheapest valid one.</li>
-            <li><b>Optimal?</b> Yes, within what it checks: nothing is skipped.</li>
+            <li><b>Evaluates</b> each subset with <code>isFaultTolerant</code>: remove each link in turn and check the rest stays connected. Keep the cheapest that passes.</li>
+            <li><b>Optimal?</b> Yes. Every subset is checked (it skips only subsets with fewer than V links or that already cost more than the best found).</li>
             <li><b>Time</b> <span class="todo">TBD: confirm with Nick</span></li>
-            <li class="note"><span class="todo">In progress: the current code keeps subsets of exactly V−1 edges (a spanning tree). The bridge check for survivability is not in yet.</span></li>
+            
           </ul>
         </div>
-        <pre class="code reveal"><span class="c">// src/brute_force/brute_force.cpp, lines 135–167 (verbatim)</span>
+        <pre class="code reveal"><span class="c">// src/brute_force/fault_tolerant_BF.cpp, lines 176–211 (verbatim)</span>
 <b>for</b> (int mask = 0; mask &lt; (1 &lt;&lt; E); mask++)
 {
-
     vector&lt;int&gt; selected;
+
     count = 0;
     totalWeight = 0;
 
+    <span class="c">// Build current subset</span>
     <b>for</b> (int i = 0; i &lt; E; i++)
     {
         <b>if</b> (mask &amp; (1 &lt;&lt; i))
@@ -149,20 +150,22 @@
         }
     }
 
-    <span class="c">// A spanning tree must contain exactly V-1 edges</span>
-    <b>if</b> (count != V - 1)
+    <span class="c">// A 2-edge-connected graph must have</span>
+    <span class="c">// at least V edges</span>
+    <b>if</b> (count &lt; V)
         <b>continue</b>;
 
-    <span class="c">// Check connectivity (also guarantees no cycles</span>
-    <span class="c">// when exactly V-1 edges are selected)</span>
-    <b>if</b> (isConnected(V, edges, selected))
-    {
+    <span class="c">// Skip candidates that cannot improve</span>
+    <span class="c">// the current best solution (assuming</span>
+    <span class="c">// nonnegative edge weights)</span>
+    <b>if</b> (totalWeight &gt;= minWeight)
+        <b>continue</b>;
 
-        <b>if</b> (totalWeight &lt; minWeight)
-        {
-            minWeight = totalWeight;
-            bestMST = selected;
-        }
+    <span class="c">// Check fault tolerance</span>
+    <b>if</b> (isFaultTolerant(V, edges, selected))
+    {
+        minWeight = totalWeight;
+        bestFTMST = selected;
     }
 }</pre>
       </div>

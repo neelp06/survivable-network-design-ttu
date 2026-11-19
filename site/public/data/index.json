@@ -6,9 +6,14 @@
    "geo": true
   },
   {
-   "name": "ttu_quad7",
-   "n": 7,
-   "geo": true
+   "name": "brute_force_test3",
+   "n": 9,
+   "geo": false
+  },
+  {
+   "name": "greedy_net8",
+   "n": 8,
+   "geo": false
   },
   {
    "name": "test_inputs_square_4",
@@ -21,14 +26,9 @@
    "geo": false
   },
   {
-   "name": "brute_force_test3",
-   "n": 9,
-   "geo": false
-  },
-  {
-   "name": "greedy_net8",
-   "n": 8,
-   "geo": false
+   "name": "ttu_quad7",
+   "n": 7,
+   "geo": true
   }
  ]
 }

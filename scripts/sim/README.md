@@ -17,7 +17,7 @@ These scripts feed the 3D simulator on the website (`site/src/sim.js`). They run
 ```bash
 python3 scripts/sim/run_solvers.py tests/test_inputs/square_4.txt
 ```
-Brute force is skipped above 24 links by default (`--brute-max-links`).
+Brute force (`src/brute_force/fault_tolerant_BF.cpp`) is skipped above 24 links by default (`--brute-max-links`).
 
 ## TTU case study
 1. Open https://overpass-turbo.eu, paste the query below, click **Run**, then **Export → GeoJSON**.

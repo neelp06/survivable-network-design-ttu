@@ -114,10 +114,6 @@
    "chosen": [
     [
      0,
-     4
-    ],
-    [
-     0,
      5
     ],
     [
@@ -126,7 +122,11 @@
     ],
     [
      1,
-     6
+     2
+    ],
+    [
+     1,
+     4
     ],
     [
      2,
@@ -135,40 +135,19 @@
     [
      3,
      4
+    ],
+    [
+     3,
+     5
     ]
    ],
-   "reported_cost": 39222.41,
-   "time_us": 320505.0,
-   "wall_us": 325459,
-   "total_cost": 39222.41,
+   "reported_cost": 50602.71,
+   "time_us": 379015.0,
+   "wall_us": 381610,
+   "total_cost": 50602.71,
    "components": 1,
-   "bridges": [
-    [
-     3,
-     4
-    ],
-    [
-     0,
-     4
-    ],
-    [
-     0,
-     5
-    ],
-    [
-     1,
-     6
-    ],
-    [
-     2,
-     6
-    ],
-    [
-     0,
-     6
-    ]
-   ],
-   "survivable": false,
+   "bridges": [],
+   "survivable": true,
    "status": "ok"
   },
   "genetic": {
@@ -225,8 +204,8 @@
     "added"
    ],
    "reported_cost": 64617.7,
-   "time_us": 9.083,
-   "wall_us": 2223,
+   "time_us": 10.159,
+   "wall_us": 2095,
    "total_cost": 64617.67,
    "components": 1,
    "bridges": [],
