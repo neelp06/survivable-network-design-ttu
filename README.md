@@ -145,7 +145,9 @@ _Work in progress._
 
 ## Generative AI Statement
 
-_TBD — fill in before submission._ Example: "Claude (Anthropic) was used to scaffold the repository structure and README template. All algorithm implementations were written by the team members."
+**Presentation website (`site/`, `.github/workflows/pages.yml`).** Brady used Claude (Anthropic) through Claude Code to build the presentation website: the page layout, styling, scroll transitions, presenter controls, the small explanatory animations (square cut example, crossover illustration, greedy illustration), and the GitHub Pages deploy workflow. Section wording was drafted with Claude from the team's README, proposal and references, then checked against the repository. Content not yet confirmed by the team is marked on the site with a dashed "TBD" box. Brady directed the design and reviewed the output. The code excerpt on the brute-force slide is copied verbatim from Nick's `src/brute_force/brute_force.cpp`; Claude did not write or change any algorithm code.
+
+_Other members: add any AI use for your own parts before submission._
 
 ## References
 
