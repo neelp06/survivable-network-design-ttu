@@ -176,3 +176,15 @@ if (!reduced) {
     .call(() => (label.textContent = '3 · no bridges left: survivable ✓'), null, '+=0.8');
   ScrollTrigger.create({ trigger: '#greedy', start: 'top 60%', onEnter: () => tl.restart(), onEnterBack: () => tl.restart() });
 })();
+
+// ---------- 3D simulation (loaded lazily when the case study comes near) ----------
+(function lazySim() {
+  const slot = document.getElementById('simSlot');
+  const io = new IntersectionObserver(async ([en]) => {
+    if (!en.isIntersecting) return;
+    io.disconnect();
+    try { (await import('./sim.js')).initSim(slot); }
+    catch (err) { slot.querySelector('.sim-placeholder b').textContent = 'Simulation failed to load'; console.error(err); }
+  }, { rootMargin: '600px' });
+  io.observe(slot);
+})();
